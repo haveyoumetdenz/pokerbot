@@ -11,3 +11,19 @@
 .env
 __pycache__
 util.py
+
+# Large data files
+*.csv
+*.pkl
+*.pt
+*.pdf
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info
+dist/
+build/

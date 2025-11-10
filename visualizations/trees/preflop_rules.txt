@@ -1,0 +1,181 @@
+Decision Tree Rules
+==================
+
+|--- effective_stack <= 33.306
+|   |--- class: call
+|--- effective_stack >  33.306
+|   |--- pot_odds <= 0.288
+|   |   |--- players_to_act <= 4.500
+|   |   |   |--- position_relative_button <= 4.500
+|   |   |   |   |--- pot_size_bb <= 170.972
+|   |   |   |   |   |--- position_relative_button <= 2.500
+|   |   |   |   |   |   |--- is_blind <= 0.500
+|   |   |   |   |   |   |   |--- hand_equity <= 0.265
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- hand_equity >  0.265
+|   |   |   |   |   |   |   |   |--- effective_stack <= 95.438
+|   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |--- effective_stack >  95.438
+|   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- is_blind >  0.500
+|   |   |   |   |   |   |   |--- hand_equity <= 0.385
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 3.250
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  3.250
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 56.521
+|   |   |   |   |   |   |   |   |   |   |--- current_bet_bb <= 9.773
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- current_bet_bb >  9.773
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  56.521
+|   |   |   |   |   |   |   |   |   |   |--- pot_odds <= 0.148
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- pot_odds >  0.148
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- hand_equity >  0.385
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- position_relative_button >  2.500
+|   |   |   |   |   |   |--- position_relative_button <= 3.500
+|   |   |   |   |   |   |   |--- hand_equity <= 0.315
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- hand_equity >  0.315
+|   |   |   |   |   |   |   |   |--- pot_commitment <= 0.064
+|   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |--- pot_commitment >  0.064
+|   |   |   |   |   |   |   |   |   |--- effective_stack <= 93.386
+|   |   |   |   |   |   |   |   |   |   |--- current_bet_bb <= 13.112
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- current_bet_bb >  13.112
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- effective_stack >  93.386
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- position_relative_button >  3.500
+|   |   |   |   |   |   |   |--- equity_percentile <= 29.500
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- equity_percentile >  29.500
+|   |   |   |   |   |   |   |   |--- pot_odds <= 0.269
+|   |   |   |   |   |   |   |   |   |--- total_street_bets <= 4.500
+|   |   |   |   |   |   |   |   |   |   |--- pot_odds <= 0.194
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |   |--- pot_odds >  0.194
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |--- total_street_bets >  4.500
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |--- pot_odds >  0.269
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |--- pot_size_bb >  170.972
+|   |   |   |   |   |--- class: call
+|   |   |   |--- position_relative_button >  4.500
+|   |   |   |   |--- hand_equity <= 0.405
+|   |   |   |   |   |--- pot_commitment <= 0.156
+|   |   |   |   |   |   |--- effective_stack <= 47.039
+|   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- effective_stack >  47.039
+|   |   |   |   |   |   |   |--- pot_commitment <= 0.123
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 2.193
+|   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  2.193
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 11.250
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  11.250
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- pot_commitment >  0.123
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- pot_commitment >  0.156
+|   |   |   |   |   |   |--- class: raise
+|   |   |   |   |--- hand_equity >  0.405
+|   |   |   |   |   |--- class: call
+|   |   |--- players_to_act >  4.500
+|   |   |   |--- is_blind <= 0.500
+|   |   |   |   |--- effective_stack <= 78.875
+|   |   |   |   |   |--- class: call
+|   |   |   |   |--- effective_stack >  78.875
+|   |   |   |   |   |--- position_relative_button <= 2.500
+|   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- position_relative_button >  2.500
+|   |   |   |   |   |   |--- position_relative_button <= 3.500
+|   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- position_relative_button >  3.500
+|   |   |   |   |   |   |   |--- hand_equity <= 0.275
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- hand_equity >  0.275
+|   |   |   |   |   |   |   |   |--- equity_percentile <= 31.500
+|   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |--- equity_percentile >  31.500
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 38.500
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  38.500
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |--- is_blind >  0.500
+|   |   |   |   |--- class: raise
+|   |--- pot_odds >  0.288
+|   |   |--- pot_odds <= 0.700
+|   |   |   |--- hand_equity <= 0.335
+|   |   |   |   |--- position_relative_button <= 2.500
+|   |   |   |   |   |--- is_blind <= 0.500
+|   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- is_blind >  0.500
+|   |   |   |   |   |   |--- equity_percentile <= 34.500
+|   |   |   |   |   |   |   |--- hand_equity <= 0.295
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- hand_equity >  0.295
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- equity_percentile >  34.500
+|   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |--- position_relative_button >  2.500
+|   |   |   |   |   |--- pot_commitment <= 0.086
+|   |   |   |   |   |   |--- position_numeric <= 1.500
+|   |   |   |   |   |   |   |--- equity_percentile <= 29.500
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- equity_percentile >  29.500
+|   |   |   |   |   |   |   |   |--- pot_commitment <= 0.030
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- pot_commitment >  0.030
+|   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- position_numeric >  1.500
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 1.309
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio >  1.309
+|   |   |   |   |   |   |   |   |--- hand_equity <= 0.325
+|   |   |   |   |   |   |   |   |   |--- players_remaining <= 5.500
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 33.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  33.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- players_remaining >  5.500
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |--- hand_equity >  0.325
+|   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- pot_commitment >  0.086
+|   |   |   |   |   |   |--- class: call
+|   |   |   |--- hand_equity >  0.335
+|   |   |   |   |--- players_remaining <= 5.500
+|   |   |   |   |   |--- players_to_act <= 2.500
+|   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- players_to_act >  2.500
+|   |   |   |   |   |   |--- position_relative_button <= 0.500
+|   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- position_relative_button >  0.500
+|   |   |   |   |   |   |   |--- hand_equity <= 0.385
+|   |   |   |   |   |   |   |   |--- current_bet_bb <= 1.250
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 31.500
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  31.500
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |--- current_bet_bb >  1.250
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- hand_equity >  0.385
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |--- players_remaining >  5.500
+|   |   |   |   |   |--- pot_odds <= 0.364
+|   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- pot_odds >  0.364
+|   |   |   |   |   |   |--- equity_percentile <= 42.500
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 20.833
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio >  20.833
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- equity_percentile >  42.500
+|   |   |   |   |   |   |   |--- class: call
+|   |   |--- pot_odds >  0.700
+|   |   |   |--- class: raise

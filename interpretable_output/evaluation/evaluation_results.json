@@ -1,0 +1,36 @@
+{
+  "vs_random": {
+    "total_profit": 105263.28125,
+    "avg_profit_per_game": 210.5265625,
+    "completed_games": 500,
+    "avg_decision_time": 0.0002400317364676716,
+    "action_distribution": {
+      "fold": 122,
+      "call": 1217,
+      "raise": 512
+    },
+    "win_rate": 0.616
+  },
+  "decision_accuracy": {
+    "preflop": {
+      "accuracy": 0.31,
+      "correct": 31,
+      "total": 100
+    },
+    "flop": {
+      "accuracy": 0.33,
+      "correct": 33,
+      "total": 100
+    },
+    "turn": {
+      "accuracy": 0.3,
+      "correct": 30,
+      "total": 100
+    },
+    "river": {
+      "accuracy": 0.32,
+      "correct": 32,
+      "total": 100
+    }
+  }
+}

@@ -1,0 +1,682 @@
+Decision Tree Rules
+==================
+
+|--- effective_stack <= 44.000
+|   |--- current_bet_bb <= 40.658
+|   |   |--- stack_to_pot_ratio <= 0.332
+|   |   |   |--- players_to_act <= 3.500
+|   |   |   |   |--- stack_to_pot_ratio <= 0.254
+|   |   |   |   |   |--- stack_to_pot_ratio <= 0.201
+|   |   |   |   |   |   |--- pot_commitment <= 0.086
+|   |   |   |   |   |   |   |--- pot_size_bb <= 362.805
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- pot_size_bb >  362.805
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |--- pot_commitment >  0.086
+|   |   |   |   |   |   |   |--- pot_odds <= 0.134
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- pot_odds >  0.134
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |--- stack_to_pot_ratio >  0.201
+|   |   |   |   |   |   |--- stack_size_bb <= 61.459
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.211
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.211
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |--- stack_size_bb >  61.459
+|   |   |   |   |   |   |   |--- effective_stack <= 17.619
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- effective_stack >  17.619
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |--- stack_to_pot_ratio >  0.254
+|   |   |   |   |   |--- effective_stack <= 34.240
+|   |   |   |   |   |   |--- pot_commitment <= 0.036
+|   |   |   |   |   |   |   |--- pot_commitment <= 0.003
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- pot_commitment >  0.003
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- pot_commitment >  0.036
+|   |   |   |   |   |   |   |--- position_relative_button <= 4.500
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- position_relative_button >  4.500
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |--- effective_stack >  34.240
+|   |   |   |   |   |   |--- pot_odds <= 0.139
+|   |   |   |   |   |   |   |--- pot_size_bb <= 228.058
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- pot_size_bb >  228.058
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- pot_odds >  0.139
+|   |   |   |   |   |   |   |--- effective_stack <= 34.505
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- effective_stack >  34.505
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |--- players_to_act >  3.500
+|   |   |   |   |--- pot_size_bb <= 401.013
+|   |   |   |   |   |--- players_to_act <= 4.500
+|   |   |   |   |   |   |--- fold_equity <= 0.150
+|   |   |   |   |   |   |   |--- pot_odds <= 0.247
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- pot_odds >  0.247
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |--- fold_equity >  0.150
+|   |   |   |   |   |   |   |--- stack_size_bb <= 75.987
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- stack_size_bb >  75.987
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- players_to_act >  4.500
+|   |   |   |   |   |   |--- effective_stack <= 2.671
+|   |   |   |   |   |   |   |--- is_blind <= 0.500
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- is_blind >  0.500
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |--- effective_stack >  2.671
+|   |   |   |   |   |   |   |--- effective_stack <= 17.984
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- effective_stack >  17.984
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |--- pot_size_bb >  401.013
+|   |   |   |   |   |--- pot_commitment <= 0.036
+|   |   |   |   |   |   |--- pot_commitment <= 0.005
+|   |   |   |   |   |   |   |--- current_bet_bb <= 0.750
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- current_bet_bb >  0.750
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- pot_commitment >  0.005
+|   |   |   |   |   |   |   |--- pot_odds <= 0.162
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- pot_odds >  0.162
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- pot_commitment >  0.036
+|   |   |   |   |   |   |--- pot_commitment <= 0.066
+|   |   |   |   |   |   |   |--- players_to_act <= 4.500
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- players_to_act >  4.500
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- pot_commitment >  0.066
+|   |   |   |   |   |   |   |--- current_bet_bb <= 37.999
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- current_bet_bb >  37.999
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |--- stack_to_pot_ratio >  0.332
+|   |   |   |--- players_remaining <= 3.500
+|   |   |   |   |--- effective_stack <= 33.750
+|   |   |   |   |   |--- stack_to_pot_ratio <= 0.504
+|   |   |   |   |   |   |--- position_relative_button <= 4.500
+|   |   |   |   |   |   |   |--- fold_equity <= 0.150
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- fold_equity >  0.150
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- position_relative_button >  4.500
+|   |   |   |   |   |   |   |--- pot_odds <= 0.329
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- pot_odds >  0.329
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- stack_to_pot_ratio >  0.504
+|   |   |   |   |   |   |--- is_button <= 0.500
+|   |   |   |   |   |   |   |--- pot_size_bb <= 109.733
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- pot_size_bb >  109.733
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- is_button >  0.500
+|   |   |   |   |   |   |   |--- effective_stack <= 33.356
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- effective_stack >  33.356
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |--- effective_stack >  33.750
+|   |   |   |   |   |--- current_bet_bb <= 20.321
+|   |   |   |   |   |   |--- effective_stack <= 41.758
+|   |   |   |   |   |   |   |--- effective_stack <= 41.280
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- effective_stack >  41.280
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- effective_stack >  41.758
+|   |   |   |   |   |   |   |--- current_bet_bb <= 14.656
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- current_bet_bb >  14.656
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- current_bet_bb >  20.321
+|   |   |   |   |   |   |--- stack_size_bb <= 72.462
+|   |   |   |   |   |   |   |--- pot_commitment <= 0.237
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- pot_commitment >  0.237
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- stack_size_bb >  72.462
+|   |   |   |   |   |   |   |--- effective_stack <= 37.563
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- effective_stack >  37.563
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |--- players_remaining >  3.500
+|   |   |   |   |--- players_remaining <= 5.500
+|   |   |   |   |   |--- stack_to_pot_ratio <= 0.491
+|   |   |   |   |   |   |--- pot_odds <= 0.159
+|   |   |   |   |   |   |   |--- effective_stack <= 37.256
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- effective_stack >  37.256
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- pot_odds >  0.159
+|   |   |   |   |   |   |   |--- position_relative_button <= 4.500
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- position_relative_button >  4.500
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- stack_to_pot_ratio >  0.491
+|   |   |   |   |   |   |--- total_street_bets <= 4.500
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.496
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.496
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- total_street_bets >  4.500
+|   |   |   |   |   |   |   |--- fold_equity <= 0.150
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- fold_equity >  0.150
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |--- players_remaining >  5.500
+|   |   |   |   |   |--- pot_odds <= 0.360
+|   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.443
+|   |   |   |   |   |   |   |--- hand_equity <= 0.435
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- hand_equity >  0.435
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |--- stack_to_pot_ratio >  0.443
+|   |   |   |   |   |   |   |--- pot_commitment <= 0.005
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- pot_commitment >  0.005
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- pot_odds >  0.360
+|   |   |   |   |   |   |--- position_relative_button <= 2.500
+|   |   |   |   |   |   |   |--- hand_equity <= 0.435
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- hand_equity >  0.435
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |--- position_relative_button >  2.500
+|   |   |   |   |   |   |   |--- hand_equity <= 0.245
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- hand_equity >  0.245
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |--- current_bet_bb >  40.658
+|   |   |--- stack_to_pot_ratio <= 0.185
+|   |   |   |--- current_bet_bb <= 54.117
+|   |   |   |   |--- effective_stack <= 24.998
+|   |   |   |   |   |--- stack_size_bb <= 52.744
+|   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.164
+|   |   |   |   |   |   |   |--- effective_stack <= 20.627
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- effective_stack >  20.627
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |--- stack_to_pot_ratio >  0.164
+|   |   |   |   |   |   |   |--- pot_size_bb <= 300.991
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- pot_size_bb >  300.991
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |--- stack_size_bb >  52.744
+|   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.184
+|   |   |   |   |   |   |   |--- effective_stack <= 13.622
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- effective_stack >  13.622
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |--- stack_to_pot_ratio >  0.184
+|   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |--- effective_stack >  24.998
+|   |   |   |   |   |--- pot_size_bb <= 275.176
+|   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- pot_size_bb >  275.176
+|   |   |   |   |   |   |--- current_bet_bb <= 46.643
+|   |   |   |   |   |   |   |--- stack_size_bb <= 54.254
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- stack_size_bb >  54.254
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |--- current_bet_bb >  46.643
+|   |   |   |   |   |   |   |--- equity_percentile <= 21.500
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- equity_percentile >  21.500
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |--- current_bet_bb >  54.117
+|   |   |   |   |--- stack_to_pot_ratio <= 0.136
+|   |   |   |   |   |--- stack_size_bb <= 39.221
+|   |   |   |   |   |   |--- pot_size_bb <= 323.318
+|   |   |   |   |   |   |   |--- current_bet_bb <= 66.056
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- current_bet_bb >  66.056
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |--- pot_size_bb >  323.318
+|   |   |   |   |   |   |   |--- position_relative_button <= 3.500
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- position_relative_button >  3.500
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |--- stack_size_bb >  39.221
+|   |   |   |   |   |   |--- players_to_act <= 4.500
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.116
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.116
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |--- players_to_act >  4.500
+|   |   |   |   |   |   |   |--- current_bet_bb <= 55.194
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- current_bet_bb >  55.194
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |--- stack_to_pot_ratio >  0.136
+|   |   |   |   |   |--- stack_to_pot_ratio <= 0.168
+|   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.146
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.136
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.136
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |--- stack_to_pot_ratio >  0.146
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.146
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.146
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |--- stack_to_pot_ratio >  0.168
+|   |   |   |   |   |   |--- hand_equity <= 0.265
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.171
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.171
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- hand_equity >  0.265
+|   |   |   |   |   |   |   |--- pot_odds <= 0.148
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- pot_odds >  0.148
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |--- stack_to_pot_ratio >  0.185
+|   |   |   |--- stack_to_pot_ratio <= 0.255
+|   |   |   |   |--- effective_stack <= 24.995
+|   |   |   |   |   |--- stack_size_bb <= 55.542
+|   |   |   |   |   |   |--- effective_stack <= 2.491
+|   |   |   |   |   |   |   |--- players_to_act <= 1.500
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- players_to_act >  1.500
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |--- effective_stack >  2.491
+|   |   |   |   |   |   |   |--- effective_stack <= 24.364
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- effective_stack >  24.364
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |--- stack_size_bb >  55.542
+|   |   |   |   |   |   |--- pot_size_bb <= 229.194
+|   |   |   |   |   |   |   |--- stack_size_bb <= 56.779
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- stack_size_bb >  56.779
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- pot_size_bb >  229.194
+|   |   |   |   |   |   |   |--- pot_odds <= 0.121
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- pot_odds >  0.121
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |--- effective_stack >  24.995
+|   |   |   |   |   |--- stack_to_pot_ratio <= 0.235
+|   |   |   |   |   |   |--- pot_size_bb <= 220.720
+|   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- pot_size_bb >  220.720
+|   |   |   |   |   |   |   |--- players_remaining <= 3.500
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- players_remaining >  3.500
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |--- stack_to_pot_ratio >  0.235
+|   |   |   |   |   |   |--- pot_size_bb <= 211.727
+|   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- pot_size_bb >  211.727
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.245
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.245
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |--- stack_to_pot_ratio >  0.255
+|   |   |   |   |--- pot_odds <= 0.131
+|   |   |   |   |   |--- pot_size_bb <= 187.868
+|   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- pot_size_bb >  187.868
+|   |   |   |   |   |   |--- pot_size_bb <= 189.438
+|   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |--- pot_size_bb >  189.438
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.298
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.298
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |--- pot_odds >  0.131
+|   |   |   |   |   |--- pot_size_bb <= 143.027
+|   |   |   |   |   |   |--- effective_stack <= 1.905
+|   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |--- effective_stack >  1.905
+|   |   |   |   |   |   |   |--- pot_size_bb <= 134.832
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- pot_size_bb >  134.832
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- pot_size_bb >  143.027
+|   |   |   |   |   |   |--- current_bet_bb <= 45.629
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.300
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.300
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- current_bet_bb >  45.629
+|   |   |   |   |   |   |   |--- position_relative_button <= 0.500
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- position_relative_button >  0.500
+|   |   |   |   |   |   |   |   |--- class: fold
+|--- effective_stack >  44.000
+|   |--- players_to_act <= 4.500
+|   |   |--- effective_stack <= 48.195
+|   |   |   |--- stack_size_bb <= 91.003
+|   |   |   |   |--- stack_to_pot_ratio <= 0.548
+|   |   |   |   |   |--- pot_size_bb <= 204.169
+|   |   |   |   |   |   |--- pot_size_bb <= 134.342
+|   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |--- pot_size_bb >  134.342
+|   |   |   |   |   |   |   |--- pot_commitment <= 0.052
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- pot_commitment >  0.052
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- pot_size_bb >  204.169
+|   |   |   |   |   |   |--- equity_percentile <= 25.500
+|   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- equity_percentile >  25.500
+|   |   |   |   |   |   |   |--- pot_commitment <= 0.162
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- pot_commitment >  0.162
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |--- stack_to_pot_ratio >  0.548
+|   |   |   |   |   |--- stack_size_bb <= 88.501
+|   |   |   |   |   |   |--- equity_percentile <= 15.500
+|   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |--- equity_percentile >  15.500
+|   |   |   |   |   |   |   |--- pot_size_bb <= 136.793
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- pot_size_bb >  136.793
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- stack_size_bb >  88.501
+|   |   |   |   |   |   |--- effective_stack <= 44.890
+|   |   |   |   |   |   |   |--- equity_percentile <= 39.500
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- equity_percentile >  39.500
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- effective_stack >  44.890
+|   |   |   |   |   |   |   |--- pot_odds <= 0.339
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- pot_odds >  0.339
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |--- stack_size_bb >  91.003
+|   |   |   |   |--- effective_stack <= 46.501
+|   |   |   |   |   |--- hand_equity <= 0.255
+|   |   |   |   |   |   |--- pot_odds <= 0.244
+|   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |--- pot_odds >  0.244
+|   |   |   |   |   |   |   |--- stack_size_bb <= 92.244
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- stack_size_bb >  92.244
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- hand_equity >  0.255
+|   |   |   |   |   |   |--- pot_commitment <= 0.016
+|   |   |   |   |   |   |   |--- pot_odds <= 0.273
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- pot_odds >  0.273
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- pot_commitment >  0.016
+|   |   |   |   |   |   |   |--- current_bet_bb <= 7.257
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- current_bet_bb >  7.257
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |--- effective_stack >  46.501
+|   |   |   |   |   |--- stack_size_bb <= 95.140
+|   |   |   |   |   |   |--- effective_stack <= 46.561
+|   |   |   |   |   |   |   |--- pot_size_bb <= 97.159
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- pot_size_bb >  97.159
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |--- effective_stack >  46.561
+|   |   |   |   |   |   |   |--- current_bet_bb <= 6.489
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- current_bet_bb >  6.489
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- stack_size_bb >  95.140
+|   |   |   |   |   |   |--- effective_stack <= 47.631
+|   |   |   |   |   |   |   |--- pot_commitment <= 0.012
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- pot_commitment >  0.012
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- effective_stack >  47.631
+|   |   |   |   |   |   |   |--- current_bet_bb <= 3.875
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- current_bet_bb >  3.875
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |--- effective_stack >  48.195
+|   |   |   |--- total_street_bets <= 4.500
+|   |   |   |   |--- pot_size_bb <= 120.321
+|   |   |   |   |   |--- total_street_bets <= 3.500
+|   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.809
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.808
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.808
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |--- stack_to_pot_ratio >  0.809
+|   |   |   |   |   |   |   |--- pot_commitment <= 0.332
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- pot_commitment >  0.332
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- total_street_bets >  3.500
+|   |   |   |   |   |   |--- fold_equity <= 0.150
+|   |   |   |   |   |   |   |--- pot_size_bb <= 4.250
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- pot_size_bb >  4.250
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- fold_equity >  0.150
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 28.500
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio >  28.500
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |--- pot_size_bb >  120.321
+|   |   |   |   |   |--- current_bet_bb <= 34.021
+|   |   |   |   |   |   |--- fold_equity <= 0.150
+|   |   |   |   |   |   |   |--- pot_odds <= 0.123
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- pot_odds >  0.123
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- fold_equity >  0.150
+|   |   |   |   |   |   |   |--- pot_size_bb <= 120.404
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- pot_size_bb >  120.404
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- current_bet_bb >  34.021
+|   |   |   |   |   |   |--- equity_percentile <= 31.500
+|   |   |   |   |   |   |   |--- hand_equity <= 0.295
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- hand_equity >  0.295
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |--- equity_percentile >  31.500
+|   |   |   |   |   |   |   |--- class: raise
+|   |   |   |--- total_street_bets >  4.500
+|   |   |   |   |--- fold_equity <= 0.150
+|   |   |   |   |   |--- pot_odds <= 0.248
+|   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.629
+|   |   |   |   |   |   |   |--- equity_percentile <= 33.500
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- equity_percentile >  33.500
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- stack_to_pot_ratio >  0.629
+|   |   |   |   |   |   |   |--- hand_equity <= 0.335
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- hand_equity >  0.335
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- pot_odds >  0.248
+|   |   |   |   |   |   |--- pot_size_bb <= 5.250
+|   |   |   |   |   |   |   |--- hand_equity <= 0.335
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- hand_equity >  0.335
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- pot_size_bb >  5.250
+|   |   |   |   |   |   |   |--- effective_stack <= 58.558
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- effective_stack >  58.558
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |--- fold_equity >  0.150
+|   |   |   |   |   |--- stack_to_pot_ratio <= 1.407
+|   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.440
+|   |   |   |   |   |   |   |--- pot_size_bb <= 181.638
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- pot_size_bb >  181.638
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- stack_to_pot_ratio >  0.440
+|   |   |   |   |   |   |   |--- pot_commitment <= 0.087
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- pot_commitment >  0.087
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- stack_to_pot_ratio >  1.407
+|   |   |   |   |   |   |--- stack_size_bb <= 99.250
+|   |   |   |   |   |   |   |--- hand_equity <= 0.275
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- hand_equity >  0.275
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- stack_size_bb >  99.250
+|   |   |   |   |   |   |   |--- equity_percentile <= 45.500
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- equity_percentile >  45.500
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |--- players_to_act >  4.500
+|   |   |--- effective_stack <= 48.180
+|   |   |   |--- stack_size_bb <= 91.130
+|   |   |   |   |--- stack_size_bb <= 86.075
+|   |   |   |   |   |--- class: raise
+|   |   |   |   |--- stack_size_bb >  86.075
+|   |   |   |   |   |--- current_bet_bb <= 10.240
+|   |   |   |   |   |   |--- effective_stack <= 45.757
+|   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- effective_stack >  45.757
+|   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- current_bet_bb >  10.240
+|   |   |   |   |   |   |--- effective_stack <= 44.716
+|   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- effective_stack >  44.716
+|   |   |   |   |   |   |   |--- pot_size_bb <= 201.503
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- pot_size_bb >  201.503
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |--- stack_size_bb >  91.130
+|   |   |   |   |--- effective_stack <= 45.807
+|   |   |   |   |   |--- equity_percentile <= 28.500
+|   |   |   |   |   |   |--- effective_stack <= 45.046
+|   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |--- effective_stack >  45.046
+|   |   |   |   |   |   |   |--- pot_odds <= 0.202
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- pot_odds >  0.202
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- equity_percentile >  28.500
+|   |   |   |   |   |   |--- is_blind <= 0.500
+|   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- is_blind >  0.500
+|   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |--- effective_stack >  45.807
+|   |   |   |   |   |--- current_bet_bb <= 4.879
+|   |   |   |   |   |   |--- equity_percentile <= 35.500
+|   |   |   |   |   |   |   |--- effective_stack <= 47.925
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- effective_stack >  47.925
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- equity_percentile >  35.500
+|   |   |   |   |   |   |   |--- pot_size_bb <= 93.250
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- pot_size_bb >  93.250
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- current_bet_bb >  4.879
+|   |   |   |   |   |   |--- effective_stack <= 46.363
+|   |   |   |   |   |   |   |--- effective_stack <= 45.871
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- effective_stack >  45.871
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- effective_stack >  46.363
+|   |   |   |   |   |   |   |--- pot_commitment <= 0.040
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- pot_commitment >  0.040
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |--- effective_stack >  48.180
+|   |   |   |--- hand_equity <= 0.355
+|   |   |   |   |--- hand_equity <= 0.285
+|   |   |   |   |   |--- hand_equity <= 0.275
+|   |   |   |   |   |   |--- pot_size_bb <= 55.406
+|   |   |   |   |   |   |   |--- hand_equity <= 0.245
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- hand_equity >  0.245
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- pot_size_bb >  55.406
+|   |   |   |   |   |   |   |--- hand_equity <= 0.245
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- hand_equity >  0.245
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- hand_equity >  0.275
+|   |   |   |   |   |   |--- position_relative_button <= 2.500
+|   |   |   |   |   |   |   |--- effective_stack <= 97.375
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- effective_stack >  97.375
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- position_relative_button >  2.500
+|   |   |   |   |   |   |   |--- equity_percentile <= 38.500
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- equity_percentile >  38.500
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |--- hand_equity >  0.285
+|   |   |   |   |   |--- hand_equity <= 0.315
+|   |   |   |   |   |   |--- effective_stack <= 79.508
+|   |   |   |   |   |   |   |--- effective_stack <= 56.094
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- effective_stack >  56.094
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- effective_stack >  79.508
+|   |   |   |   |   |   |   |--- equity_percentile <= 18.500
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- equity_percentile >  18.500
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- hand_equity >  0.315
+|   |   |   |   |   |   |--- fold_equity <= 0.150
+|   |   |   |   |   |   |   |--- hand_equity <= 0.335
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- hand_equity >  0.335
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- fold_equity >  0.150
+|   |   |   |   |   |   |   |--- pot_odds <= 0.292
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- pot_odds >  0.292
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |--- hand_equity >  0.355
+|   |   |   |   |--- hand_equity <= 0.365
+|   |   |   |   |   |--- effective_stack <= 98.750
+|   |   |   |   |   |   |--- fold_equity <= 0.150
+|   |   |   |   |   |   |   |--- equity_percentile <= 39.500
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- equity_percentile >  39.500
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- fold_equity >  0.150
+|   |   |   |   |   |   |   |--- pot_odds <= 0.368
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- pot_odds >  0.368
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- effective_stack >  98.750
+|   |   |   |   |   |   |--- stack_size_bb <= 99.250
+|   |   |   |   |   |   |   |--- equity_percentile <= 34.500
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- equity_percentile >  34.500
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- stack_size_bb >  99.250
+|   |   |   |   |   |   |   |--- pot_odds <= 0.343
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- pot_odds >  0.343
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |--- hand_equity >  0.365
+|   |   |   |   |   |--- hand_equity <= 0.435
+|   |   |   |   |   |   |--- hand_equity <= 0.395
+|   |   |   |   |   |   |   |--- hand_equity <= 0.385
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- hand_equity >  0.385
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- hand_equity >  0.395
+|   |   |   |   |   |   |   |--- hand_equity <= 0.405
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- hand_equity >  0.405
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- hand_equity >  0.435
+|   |   |   |   |   |   |--- hand_equity <= 0.455
+|   |   |   |   |   |   |   |--- equity_percentile <= 33.500
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- equity_percentile >  33.500
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- hand_equity >  0.455
+|   |   |   |   |   |   |   |--- equity_percentile <= 26.500
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- equity_percentile >  26.500
+|   |   |   |   |   |   |   |   |--- class: raise

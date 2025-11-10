@@ -1,0 +1,193 @@
+Decision Tree Rules
+==================
+
+|--- effective_stack <= 34.000
+|   |--- effective_stack <= 4.500
+|   |   |--- pot_odds <= 0.190
+|   |   |   |--- stack_to_pot_ratio <= 0.021
+|   |   |   |   |--- effective_stack <= 0.535
+|   |   |   |   |   |--- stack_to_pot_ratio <= 0.014
+|   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- stack_to_pot_ratio >  0.014
+|   |   |   |   |   |   |--- class: call
+|   |   |   |   |--- effective_stack >  0.535
+|   |   |   |   |   |--- pot_size_bb <= 321.639
+|   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- pot_size_bb >  321.639
+|   |   |   |   |   |   |--- class: call
+|   |   |   |--- stack_to_pot_ratio >  0.021
+|   |   |   |   |--- stack_size_bb <= 32.360
+|   |   |   |   |   |--- pot_odds <= 0.026
+|   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |--- pot_odds >  0.026
+|   |   |   |   |   |   |--- class: fold
+|   |   |   |   |--- stack_size_bb >  32.360
+|   |   |   |   |   |--- pot_commitment <= 0.005
+|   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |--- pot_commitment >  0.005
+|   |   |   |   |   |   |--- class: call
+|   |   |--- pot_odds >  0.190
+|   |   |   |--- stack_size_bb <= 69.047
+|   |   |   |   |--- pot_size_bb <= 405.592
+|   |   |   |   |   |--- effective_stack <= 0.500
+|   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- effective_stack >  0.500
+|   |   |   |   |   |   |--- class: call
+|   |   |   |   |--- pot_size_bb >  405.592
+|   |   |   |   |   |--- effective_stack <= 0.500
+|   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- effective_stack >  0.500
+|   |   |   |   |   |   |--- class: call
+|   |   |   |--- stack_size_bb >  69.047
+|   |   |   |   |--- pot_size_bb <= 128.659
+|   |   |   |   |   |--- players_to_act <= 1.500
+|   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- players_to_act >  1.500
+|   |   |   |   |   |   |--- class: call
+|   |   |   |   |--- pot_size_bb >  128.659
+|   |   |   |   |   |--- stack_size_bb <= 78.513
+|   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- stack_size_bb >  78.513
+|   |   |   |   |   |   |--- class: call
+|   |--- effective_stack >  4.500
+|   |   |--- stack_size_bb <= 34.824
+|   |   |   |--- stack_to_pot_ratio <= 0.024
+|   |   |   |   |--- pot_size_bb <= 376.837
+|   |   |   |   |   |--- stack_to_pot_ratio <= 0.019
+|   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |--- stack_to_pot_ratio >  0.019
+|   |   |   |   |   |   |--- class: fold
+|   |   |   |   |--- pot_size_bb >  376.837
+|   |   |   |   |   |--- pot_size_bb <= 467.477
+|   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- pot_size_bb >  467.477
+|   |   |   |   |   |   |--- class: call
+|   |   |   |--- stack_to_pot_ratio >  0.024
+|   |   |   |   |--- effective_stack <= 24.319
+|   |   |   |   |   |--- effective_stack <= 16.304
+|   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |--- effective_stack >  16.304
+|   |   |   |   |   |   |--- class: fold
+|   |   |   |   |--- effective_stack >  24.319
+|   |   |   |   |   |--- effective_stack <= 29.300
+|   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |--- effective_stack >  29.300
+|   |   |   |   |   |   |--- class: fold
+|   |   |--- stack_size_bb >  34.824
+|   |   |   |--- pot_odds <= 0.163
+|   |   |   |   |--- effective_stack <= 22.361
+|   |   |   |   |   |--- stack_to_pot_ratio <= 0.185
+|   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |--- stack_to_pot_ratio >  0.185
+|   |   |   |   |   |   |--- class: call
+|   |   |   |   |--- effective_stack >  22.361
+|   |   |   |   |   |--- stack_size_bb <= 54.930
+|   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- stack_size_bb >  54.930
+|   |   |   |   |   |   |--- class: call
+|   |   |   |--- pot_odds >  0.163
+|   |   |   |   |--- pot_commitment <= 0.285
+|   |   |   |   |   |--- stack_to_pot_ratio <= 0.454
+|   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- stack_to_pot_ratio >  0.454
+|   |   |   |   |   |   |--- class: call
+|   |   |   |   |--- pot_commitment >  0.285
+|   |   |   |   |   |--- effective_stack <= 28.387
+|   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- effective_stack >  28.387
+|   |   |   |   |   |   |--- class: raise
+|--- effective_stack >  34.000
+|   |--- stack_to_pot_ratio <= 0.382
+|   |   |--- stack_to_pot_ratio <= 0.275
+|   |   |   |--- stack_size_bb <= 42.000
+|   |   |   |   |--- stack_to_pot_ratio <= 0.189
+|   |   |   |   |   |--- fold_equity <= 0.150
+|   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |--- fold_equity >  0.150
+|   |   |   |   |   |   |--- class: fold
+|   |   |   |   |--- stack_to_pot_ratio >  0.189
+|   |   |   |   |   |--- position_relative_button <= 1.500
+|   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- position_relative_button >  1.500
+|   |   |   |   |   |   |--- class: raise
+|   |   |   |--- stack_size_bb >  42.000
+|   |   |   |   |--- stack_to_pot_ratio <= 0.189
+|   |   |   |   |   |--- effective_stack <= 44.735
+|   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- effective_stack >  44.735
+|   |   |   |   |   |   |--- class: raise
+|   |   |   |   |--- stack_to_pot_ratio >  0.189
+|   |   |   |   |   |--- stack_size_bb <= 49.186
+|   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- stack_size_bb >  49.186
+|   |   |   |   |   |   |--- class: raise
+|   |   |--- stack_to_pot_ratio >  0.275
+|   |   |   |--- stack_size_bb <= 49.944
+|   |   |   |   |--- stack_size_bb <= 41.218
+|   |   |   |   |   |--- is_blind <= 0.500
+|   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- is_blind >  0.500
+|   |   |   |   |   |   |--- class: raise
+|   |   |   |   |--- stack_size_bb >  41.218
+|   |   |   |   |   |--- stack_to_pot_ratio <= 0.286
+|   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- stack_to_pot_ratio >  0.286
+|   |   |   |   |   |   |--- class: raise
+|   |   |   |--- stack_size_bb >  49.944
+|   |   |   |   |--- stack_size_bb <= 53.427
+|   |   |   |   |   |--- stack_size_bb <= 51.706
+|   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- stack_size_bb >  51.706
+|   |   |   |   |   |   |--- class: raise
+|   |   |   |   |--- stack_size_bb >  53.427
+|   |   |   |   |   |--- effective_stack <= 53.536
+|   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- effective_stack >  53.536
+|   |   |   |   |   |   |--- class: raise
+|   |--- stack_to_pot_ratio >  0.382
+|   |   |--- stack_to_pot_ratio <= 0.670
+|   |   |   |--- stack_size_bb <= 74.006
+|   |   |   |   |--- stack_size_bb <= 52.550
+|   |   |   |   |   |--- stack_size_bb <= 48.836
+|   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- stack_size_bb >  48.836
+|   |   |   |   |   |   |--- class: raise
+|   |   |   |   |--- stack_size_bb >  52.550
+|   |   |   |   |   |--- pot_commitment <= 0.162
+|   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- pot_commitment >  0.162
+|   |   |   |   |   |   |--- class: raise
+|   |   |   |--- stack_size_bb >  74.006
+|   |   |   |   |--- effective_stack <= 40.685
+|   |   |   |   |   |--- effective_stack <= 37.740
+|   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- effective_stack >  37.740
+|   |   |   |   |   |   |--- class: call
+|   |   |   |   |--- effective_stack >  40.685
+|   |   |   |   |   |--- stack_size_bb <= 85.270
+|   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- stack_size_bb >  85.270
+|   |   |   |   |   |   |--- class: raise
+|   |   |--- stack_to_pot_ratio >  0.670
+|   |   |   |--- effective_stack <= 40.649
+|   |   |   |   |--- pot_odds <= 0.286
+|   |   |   |   |   |--- current_bet_bb <= 21.949
+|   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- current_bet_bb >  21.949
+|   |   |   |   |   |   |--- class: call
+|   |   |   |   |--- pot_odds >  0.286
+|   |   |   |   |   |--- pot_size_bb <= 81.009
+|   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- pot_size_bb >  81.009
+|   |   |   |   |   |   |--- class: call
+|   |   |   |--- effective_stack >  40.649
+|   |   |   |   |--- stack_to_pot_ratio <= 1.204
+|   |   |   |   |   |--- effective_stack <= 43.000
+|   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- effective_stack >  43.000
+|   |   |   |   |   |   |--- class: raise
+|   |   |   |   |--- stack_to_pot_ratio >  1.204
+|   |   |   |   |   |--- stack_to_pot_ratio <= 2.036
+|   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- stack_to_pot_ratio >  2.036
+|   |   |   |   |   |   |--- class: raise

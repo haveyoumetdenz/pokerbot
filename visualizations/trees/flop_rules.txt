@@ -1,0 +1,154 @@
+Decision Tree Rules
+==================
+
+|--- pot_size_bb <= 119.629
+|   |--- stack_size_bb <= 76.533
+|   |   |--- position_numeric <= 1.500
+|   |   |   |--- stack_size_bb <= 54.894
+|   |   |   |   |--- class: call
+|   |   |   |--- stack_size_bb >  54.894
+|   |   |   |   |--- effective_stack <= 74.544
+|   |   |   |   |   |--- hand_equity <= 0.315
+|   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.870
+|   |   |   |   |   |   |   |--- hand_equity <= 0.285
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- hand_equity >  0.285
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- stack_to_pot_ratio >  0.870
+|   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- hand_equity >  0.315
+|   |   |   |   |   |   |--- equity_percentile <= 38.500
+|   |   |   |   |   |   |   |--- pot_size_bb <= 98.989
+|   |   |   |   |   |   |   |   |--- position <= 0.500
+|   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |--- position >  0.500
+|   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- pot_size_bb >  98.989
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- equity_percentile >  38.500
+|   |   |   |   |   |   |   |--- effective_stack <= 58.895
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- effective_stack >  58.895
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |--- effective_stack >  74.544
+|   |   |   |   |   |--- class: call
+|   |   |--- position_numeric >  1.500
+|   |   |   |--- equity_percentile <= 36.500
+|   |   |   |   |--- stack_size_bb <= 65.801
+|   |   |   |   |   |--- class: raise
+|   |   |   |   |--- stack_size_bb >  65.801
+|   |   |   |   |   |--- class: call
+|   |   |   |--- equity_percentile >  36.500
+|   |   |   |   |--- hand_equity <= 0.355
+|   |   |   |   |   |--- class: call
+|   |   |   |   |--- hand_equity >  0.355
+|   |   |   |   |   |--- class: fold
+|   |--- stack_size_bb >  76.533
+|   |   |--- effective_stack <= 45.445
+|   |   |   |--- class: call
+|   |   |--- effective_stack >  45.445
+|   |   |   |--- stack_size_bb <= 89.750
+|   |   |   |   |--- hand_equity <= 0.265
+|   |   |   |   |   |--- class: call
+|   |   |   |   |--- hand_equity >  0.265
+|   |   |   |   |   |--- pot_commitment <= 0.233
+|   |   |   |   |   |   |--- stack_to_pot_ratio <= 1.937
+|   |   |   |   |   |   |   |--- pot_size_bb <= 48.486
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- pot_size_bb >  48.486
+|   |   |   |   |   |   |   |   |--- stack_size_bb <= 88.576
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 39.500
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.375
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.375
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  39.500
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 1.305
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  1.305
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |--- stack_size_bb >  88.576
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- stack_to_pot_ratio >  1.937
+|   |   |   |   |   |   |   |--- effective_stack <= 88.279
+|   |   |   |   |   |   |   |   |--- stack_size_bb <= 87.233
+|   |   |   |   |   |   |   |   |   |--- fold_equity <= 0.150
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |--- fold_equity >  0.150
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- stack_size_bb >  87.233
+|   |   |   |   |   |   |   |   |   |--- effective_stack <= 87.504
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |--- effective_stack >  87.504
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- effective_stack >  88.279
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- pot_commitment >  0.233
+|   |   |   |   |   |   |--- equity_percentile <= 30.500
+|   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- equity_percentile >  30.500
+|   |   |   |   |   |   |   |--- fold_equity <= 0.150
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- fold_equity >  0.150
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |--- stack_size_bb >  89.750
+|   |   |   |   |--- equity_percentile <= 40.500
+|   |   |   |   |   |--- players_to_act <= 1.500
+|   |   |   |   |   |   |--- pot_odds <= 0.667
+|   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- pot_odds >  0.667
+|   |   |   |   |   |   |   |--- equity_percentile <= 29.500
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- equity_percentile >  29.500
+|   |   |   |   |   |   |   |   |--- is_blind <= 0.500
+|   |   |   |   |   |   |   |   |   |--- position_relative_button <= 4.500
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 20.677
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  20.677
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- position_relative_button >  4.500
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- is_blind >  0.500
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- players_to_act >  1.500
+|   |   |   |   |   |   |--- effective_stack <= 66.195
+|   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- effective_stack >  66.195
+|   |   |   |   |   |   |   |--- stack_size_bb <= 90.994
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- stack_size_bb >  90.994
+|   |   |   |   |   |   |   |   |--- position_relative_button <= 2.500
+|   |   |   |   |   |   |   |   |   |--- effective_stack <= 77.917
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- effective_stack >  77.917
+|   |   |   |   |   |   |   |   |   |   |--- pot_odds <= 0.040
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- pot_odds >  0.040
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- position_relative_button >  2.500
+|   |   |   |   |   |   |   |   |   |--- effective_stack <= 93.311
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.295
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.295
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- effective_stack >  93.311
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 32.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  32.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |--- equity_percentile >  40.500
+|   |   |   |   |   |--- hand_equity <= 0.435
+|   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- hand_equity >  0.435
+|   |   |   |   |   |   |--- class: raise
+|--- pot_size_bb >  119.629
+|   |--- effective_stack <= 53.725
+|   |   |--- equity_percentile <= 16.500
+|   |   |   |--- class: call
+|   |   |--- equity_percentile >  16.500
+|   |   |   |--- class: call
+|   |--- effective_stack >  53.725
+|   |   |--- effective_stack <= 55.898
+|   |   |   |--- class: raise
+|   |   |--- effective_stack >  55.898
+|   |   |   |--- class: call

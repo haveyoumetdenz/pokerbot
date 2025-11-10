@@ -1,0 +1,23 @@
+{
+  "vs_random": {
+    "total_profit": 7492.875,
+    "avg_profit_per_game": 374.64375,
+    "completed_games": 20,
+    "avg_decision_time": 0.0002591509214589294,
+    "action_distribution": {
+      "fold": 0,
+      "call": 54,
+      "raise": 17
+    },
+    "win_rate": 1.0
+  },
+  "vs_neural": {
+    "interpretable_profit": 4746.319498300552,
+    "neural_profit": -1210.6638996601105,
+    "profit_difference": 5956.983397960663,
+    "completed_games": 10,
+    "interpretable_avg": 474.63194983005525,
+    "neural_avg": -121.06638996601104
+  },
+  "decision_accuracy": {}
+}

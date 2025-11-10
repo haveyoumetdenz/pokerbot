@@ -1,0 +1,14 @@
+{
+  "total_decisions": 73046,
+  "decisions_by_street": {
+    "preflop": 13142,
+    "flop": 20060,
+    "turn": 21741,
+    "river": 18103
+  },
+  "actions_taken": {
+    "fold": 91,
+    "call": 71132,
+    "raise": 1823
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "preflop": {
+    "train_accuracy": 0.9127032356625887,
+    "val_accuracy": 0.9126340232333193,
+    "best_params": {
+      "max_depth": 8,
+      "min_samples_leaf": 25,
+      "min_samples_split": 50
+    },
+    "n_samples": 3173887,
+    "n_features": 35,
+    "tree_depth": 8,
+    "n_leaves": 227
+  },
+  "flop": {
+    "train_accuracy": 0.8471867749345688,
+    "val_accuracy": 0.8470746574100724,
+    "best_params": {
+      "max_depth": 8,
+      "min_samples_leaf": 25,
+      "min_samples_split": 50
+    },
+    "n_samples": 4881564,
+    "n_features": 35,
+    "tree_depth": 8,
+    "n_leaves": 249
+  },
+  "turn": {
+    "train_accuracy": 0.8230408611162573,
+    "val_accuracy": 0.8235610347502023,
+    "best_params": {
+      "max_depth": 6,
+      "min_samples_leaf": 50,
+      "min_samples_split": 50
+    },
+    "n_samples": 5357233,
+    "n_features": 35,
+    "tree_depth": 6,
+    "n_leaves": 64
+  },
+  "river": {
+    "train_accuracy": 0.8134319751643838,
+    "val_accuracy": 0.8131056791128654,
+    "best_params": {
+      "max_depth": 6,
+      "min_samples_leaf": 25,
+      "min_samples_split": 50
+    },
+    "n_samples": 4519719,
+    "n_features": 35,
+    "tree_depth": 6,
+    "n_leaves": 64
+  }
+}

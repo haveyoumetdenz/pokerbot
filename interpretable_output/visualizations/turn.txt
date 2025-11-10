@@ -1,0 +1,2704 @@
+Decision Tree Rules
+==================
+
+|--- effective_stack <= 0.499
+|   |--- pot_size_bb <= 334.940
+|   |   |--- stack_size_bb <= 0.608
+|   |   |   |--- pot_size_bb <= 257.664
+|   |   |   |   |--- fold_equity <= 0.150
+|   |   |   |   |   |--- pot_size_bb <= 217.436
+|   |   |   |   |   |   |--- position_relative_button <= 2.500
+|   |   |   |   |   |   |   |--- pot_size_bb <= 200.250
+|   |   |   |   |   |   |   |   |--- hand_equity <= 0.315
+|   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |   |--- hand_equity >  0.315
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 29.500
+|   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  29.500
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 36.000
+|   |   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  36.000
+|   |   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- pot_size_bb >  200.250
+|   |   |   |   |   |   |   |   |--- stack_size_bb <= 0.338
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 217.022
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.195
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.195
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  217.022
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- stack_size_bb >  0.338
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- position_relative_button >  2.500
+|   |   |   |   |   |   |   |--- pot_size_bb <= 200.536
+|   |   |   |   |   |   |   |   |--- equity_percentile <= 37.500
+|   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.335
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 28.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  28.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- hand_equity >  0.335
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.355
+|   |   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.355
+|   |   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |   |--- equity_percentile >  37.500
+|   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- pot_size_bb >  200.536
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 201.482
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 36.500
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 29.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  29.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  36.500
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.305
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.305
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  201.482
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 201.750
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 28.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  28.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  201.750
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 213.059
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  213.059
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |--- pot_size_bb >  217.436
+|   |   |   |   |   |   |--- position_relative_button <= 2.500
+|   |   |   |   |   |   |   |--- pot_size_bb <= 217.587
+|   |   |   |   |   |   |   |   |--- hand_equity <= 0.365
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- hand_equity >  0.365
+|   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- pot_size_bb >  217.587
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 257.485
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 257.024
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.475
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.475
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  257.024
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 257.172
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  257.172
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  257.485
+|   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |--- position_relative_button >  2.500
+|   |   |   |   |   |   |   |--- pot_size_bb <= 238.503
+|   |   |   |   |   |   |   |   |--- equity_percentile <= 43.500
+|   |   |   |   |   |   |   |   |   |--- effective_stack <= 0.104
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 237.895
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  237.895
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |--- effective_stack >  0.104
+|   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |   |--- equity_percentile >  43.500
+|   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.375
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 219.395
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  219.395
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |--- hand_equity >  0.375
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- pot_size_bb >  238.503
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 240.215
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 33.500
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.385
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.385
+|   |   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  33.500
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 239.963
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  239.963
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  240.215
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 240.733
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 240.525
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  240.525
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  240.733
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 257.115
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  257.115
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |--- fold_equity >  0.150
+|   |   |   |   |   |--- pot_size_bb <= 225.636
+|   |   |   |   |   |   |--- position_relative_button <= 4.500
+|   |   |   |   |   |   |   |--- pot_size_bb <= 200.250
+|   |   |   |   |   |   |   |   |--- equity_percentile <= 46.500
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 44.500
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.415
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.415
+|   |   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  44.500
+|   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |   |--- equity_percentile >  46.500
+|   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- pot_size_bb >  200.250
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 200.750
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  200.750
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 202.625
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 0.040
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb >  0.040
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  202.625
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.002
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.002
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- position_relative_button >  4.500
+|   |   |   |   |   |   |   |--- pot_size_bb <= 201.492
+|   |   |   |   |   |   |   |   |--- equity_percentile <= 43.500
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 200.750
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  200.750
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- equity_percentile >  43.500
+|   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- pot_size_bb >  201.492
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 209.255
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 49.500
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 204.279
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  204.279
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  49.500
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.355
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.355
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  209.255
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 209.495
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 209.483
+|   |   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  209.483
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  209.495
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 50.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  50.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |--- pot_size_bb >  225.636
+|   |   |   |   |   |   |--- position_relative_button <= 4.500
+|   |   |   |   |   |   |   |--- pot_size_bb <= 239.068
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 225.694
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  225.694
+|   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.465
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 227.589
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  227.589
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- hand_equity >  0.465
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- pot_size_bb >  239.068
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 239.228
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  239.228
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 16.500
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  16.500
+|   |   |   |   |   |   |   |   |   |   |--- position_relative_button <= 2.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- position_relative_button >  2.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |--- position_relative_button >  4.500
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.001
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 248.445
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 47.500
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 225.784
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  225.784
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  47.500
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 242.349
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  242.349
+|   |   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  248.445
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 248.887
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 248.561
+|   |   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  248.561
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  248.887
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.305
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.305
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.001
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |--- pot_size_bb >  257.664
+|   |   |   |   |--- pot_size_bb <= 307.619
+|   |   |   |   |   |--- position_relative_button <= 3.500
+|   |   |   |   |   |   |--- players_remaining <= 2.500
+|   |   |   |   |   |   |   |--- is_button <= 0.500
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 299.393
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 283.817
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.215
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.215
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  283.817
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 298.914
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  298.914
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  299.393
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 300.709
+|   |   |   |   |   |   |   |   |   |   |--- position_relative_button <= 2.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- position_relative_button >  2.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  300.709
+|   |   |   |   |   |   |   |   |   |   |--- position_relative_button <= 2.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- position_relative_button >  2.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |--- is_button >  0.500
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 278.043
+|   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.235
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- hand_equity >  0.235
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 275.081
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  275.081
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  278.043
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 300.986
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 299.012
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  299.012
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  300.986
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 307.014
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  307.014
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |--- players_remaining >  2.500
+|   |   |   |   |   |   |   |--- fold_equity <= 0.150
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 301.015
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 300.022
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.295
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.295
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  300.022
+|   |   |   |   |   |   |   |   |   |   |--- position_relative_button <= 2.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- position_relative_button >  2.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  301.015
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 301.865
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 32.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  32.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  301.865
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 307.204
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  307.204
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |   |--- fold_equity >  0.150
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 300.370
+|   |   |   |   |   |   |   |   |   |--- position_relative_button <= 0.500
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- position_relative_button >  0.500
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 46.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  46.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  300.370
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 300.654
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  300.654
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.205
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.205
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |--- position_relative_button >  3.500
+|   |   |   |   |   |   |--- position_relative_button <= 4.500
+|   |   |   |   |   |   |   |--- players_remaining <= 2.500
+|   |   |   |   |   |   |   |   |--- hand_equity <= 0.245
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 262.050
+|   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  262.050
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 28.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  28.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |--- hand_equity >  0.245
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 301.512
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 300.136
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  300.136
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  301.512
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 304.636
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  304.636
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |--- players_remaining >  2.500
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 306.707
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 300.503
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 23.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  23.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  300.503
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 30.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  30.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  306.707
+|   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.245
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- hand_equity >  0.245
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- position_relative_button >  4.500
+|   |   |   |   |   |   |   |--- pot_size_bb <= 301.330
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 300.885
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 290.595
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.265
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.265
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  290.595
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 300.446
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  300.446
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  300.885
+|   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.325
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 39.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  39.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- hand_equity >  0.325
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- pot_size_bb >  301.330
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 301.513
+|   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.295
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 43.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  43.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |   |   |--- hand_equity >  0.295
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 43.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  43.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  301.513
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 302.493
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 37.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  37.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  302.493
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 302.628
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  302.628
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |--- pot_size_bb >  307.619
+|   |   |   |   |   |--- is_blind <= 0.500
+|   |   |   |   |   |   |--- players_remaining <= 2.500
+|   |   |   |   |   |   |   |--- fold_equity <= 0.150
+|   |   |   |   |   |   |   |   |--- stack_size_bb <= 0.033
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 334.541
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 307.714
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  307.714
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  334.541
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 334.717
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  334.717
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |--- stack_size_bb >  0.033
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- fold_equity >  0.150
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 319.474
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 307.747
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  307.747
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.235
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.235
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  319.474
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 319.704
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  319.704
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 36.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  36.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |--- players_remaining >  2.500
+|   |   |   |   |   |   |   |--- position_relative_button <= 4.500
+|   |   |   |   |   |   |   |   |--- position_numeric <= 1.500
+|   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.275
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 314.960
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  314.960
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |--- hand_equity >  0.275
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 309.297
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  309.297
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |--- position_numeric >  1.500
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 43.500
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.375
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.375
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  43.500
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- position_relative_button >  4.500
+|   |   |   |   |   |   |   |   |--- hand_equity <= 0.395
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 36.500
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 327.371
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  327.371
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  36.500
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 40.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  40.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |--- hand_equity >  0.395
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 328.625
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.405
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.405
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  328.625
+|   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |--- is_blind >  0.500
+|   |   |   |   |   |   |--- pot_size_bb <= 307.870
+|   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- pot_size_bb >  307.870
+|   |   |   |   |   |   |   |--- pot_size_bb <= 320.140
+|   |   |   |   |   |   |   |   |--- hand_equity <= 0.265
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 318.259
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 42.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  42.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  318.259
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- hand_equity >  0.265
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 319.924
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack <= 0.128
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack >  0.128
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  319.924
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.345
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.345
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |--- pot_size_bb >  320.140
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 320.500
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  320.500
+|   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.325
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 42.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  42.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- hand_equity >  0.325
+|   |   |   |   |   |   |   |   |   |   |--- is_button <= 0.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- is_button >  0.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |--- stack_size_bb >  0.608
+|   |   |   |--- pot_odds <= 0.007
+|   |   |   |   |--- stack_size_bb <= 0.992
+|   |   |   |   |   |--- pot_odds <= 0.002
+|   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |--- pot_odds >  0.002
+|   |   |   |   |   |   |--- is_button <= 0.500
+|   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- is_button >  0.500
+|   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |--- stack_size_bb >  0.992
+|   |   |   |   |   |--- pot_size_bb <= 301.612
+|   |   |   |   |   |   |--- pot_size_bb <= 297.019
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.005
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.005
+|   |   |   |   |   |   |   |   |--- is_button <= 0.500
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- is_button >  0.500
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- pot_size_bb >  297.019
+|   |   |   |   |   |   |   |--- hand_equity <= 0.295
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- hand_equity >  0.295
+|   |   |   |   |   |   |   |   |--- pot_odds <= 0.007
+|   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.385
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 298.143
+|   |   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  298.143
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- hand_equity >  0.385
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- pot_odds >  0.007
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- pot_size_bb >  301.612
+|   |   |   |   |   |   |--- players_to_act <= 1.500
+|   |   |   |   |   |   |   |--- pot_size_bb <= 311.507
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- pot_size_bb >  311.507
+|   |   |   |   |   |   |   |   |--- fold_equity <= 0.150
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- fold_equity >  0.150
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 314.877
+|   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  314.877
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.325
+|   |   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.325
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- players_to_act >  1.500
+|   |   |   |   |   |   |   |--- class: call
+|   |   |   |--- pot_odds >  0.007
+|   |   |   |   |--- pot_commitment <= 0.368
+|   |   |   |   |   |--- stack_to_pot_ratio <= 0.017
+|   |   |   |   |   |   |--- pot_odds <= 0.017
+|   |   |   |   |   |   |   |--- equity_percentile <= 45.500
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- equity_percentile >  45.500
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 299.949
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  299.949
+|   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |--- pot_odds >  0.017
+|   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |--- stack_to_pot_ratio >  0.017
+|   |   |   |   |   |   |--- equity_percentile <= 37.500
+|   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- equity_percentile >  37.500
+|   |   |   |   |   |   |   |--- current_bet_bb <= 18.890
+|   |   |   |   |   |   |   |   |--- equity_percentile <= 38.500
+|   |   |   |   |   |   |   |   |   |--- is_blind <= 0.500
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.019
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.019
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- is_blind >  0.500
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 205.013
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  205.013
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |--- equity_percentile >  38.500
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- current_bet_bb >  18.890
+|   |   |   |   |   |   |   |   |--- current_bet_bb <= 19.279
+|   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |   |--- current_bet_bb >  19.279
+|   |   |   |   |   |   |   |   |   |--- fold_equity <= 0.150
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- fold_equity >  0.150
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |--- pot_commitment >  0.368
+|   |   |   |   |   |--- stack_size_bb <= 36.162
+|   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- stack_size_bb >  36.162
+|   |   |   |   |   |   |--- class: fold
+|   |--- pot_size_bb >  334.940
+|   |   |--- pot_size_bb <= 421.544
+|   |   |   |--- stack_to_pot_ratio <= 0.003
+|   |   |   |   |--- pot_size_bb <= 405.500
+|   |   |   |   |   |--- position_relative_button <= 3.500
+|   |   |   |   |   |   |--- pot_size_bb <= 400.375
+|   |   |   |   |   |   |   |--- pot_size_bb <= 399.999
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 387.417
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 348.715
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 0.197
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb >  0.197
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  348.715
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 386.752
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  386.752
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  387.417
+|   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.365
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 27.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  27.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |--- hand_equity >  0.365
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 388.875
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  388.875
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |--- pot_size_bb >  399.999
+|   |   |   |   |   |   |   |   |--- is_button <= 0.500
+|   |   |   |   |   |   |   |   |   |--- position_relative_button <= 2.500
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 23.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  23.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- position_relative_button >  2.500
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 400.004
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  400.004
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- is_button >  0.500
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 400.001
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  400.001
+|   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |--- pot_size_bb >  400.375
+|   |   |   |   |   |   |   |--- pot_size_bb <= 401.782
+|   |   |   |   |   |   |   |   |--- position_numeric <= 0.500
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 400.822
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  400.822
+|   |   |   |   |   |   |   |   |   |   |--- is_button <= 0.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- is_button >  0.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |--- position_numeric >  0.500
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 401.394
+|   |   |   |   |   |   |   |   |   |   |--- players_remaining <= 3.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- players_remaining >  3.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  401.394
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 25.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  25.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |--- pot_size_bb >  401.782
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 403.510
+|   |   |   |   |   |   |   |   |   |--- position_relative_button <= 1.500
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 20.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  20.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- position_relative_button >  1.500
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 403.352
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  403.352
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  403.510
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 403.850
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 32.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  32.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  403.850
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 403.851
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  403.851
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |--- position_relative_button >  3.500
+|   |   |   |   |   |   |--- pot_size_bb <= 400.335
+|   |   |   |   |   |   |   |--- pot_size_bb <= 398.643
+|   |   |   |   |   |   |   |   |--- position_relative_button <= 4.500
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 397.038
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 396.666
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  396.666
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  397.038
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- position_relative_button >  4.500
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 354.757
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 42.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  42.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  354.757
+|   |   |   |   |   |   |   |   |   |   |--- players_to_act <= 1.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- players_to_act >  1.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |--- pot_size_bb >  398.643
+|   |   |   |   |   |   |   |   |--- hand_equity <= 0.435
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 33.500
+|   |   |   |   |   |   |   |   |   |   |--- players_remaining <= 2.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- players_remaining >  2.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  33.500
+|   |   |   |   |   |   |   |   |   |   |--- position_relative_button <= 4.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |--- position_relative_button >  4.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- hand_equity >  0.435
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 42.500
+|   |   |   |   |   |   |   |   |   |   |--- players_to_act <= 1.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- players_to_act >  1.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  42.500
+|   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |--- pot_size_bb >  400.335
+|   |   |   |   |   |   |   |--- pot_size_bb <= 400.510
+|   |   |   |   |   |   |   |   |--- equity_percentile <= 21.500
+|   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.315
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.295
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.295
+|   |   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |   |   |--- hand_equity >  0.315
+|   |   |   |   |   |   |   |   |   |   |--- players_to_act <= 1.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- players_to_act >  1.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- equity_percentile >  21.500
+|   |   |   |   |   |   |   |   |   |--- players_to_act <= 1.500
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 24.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  24.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- players_to_act >  1.500
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 37.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  37.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |   |--- pot_size_bb >  400.510
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 401.497
+|   |   |   |   |   |   |   |   |   |--- position_relative_button <= 4.500
+|   |   |   |   |   |   |   |   |   |   |--- players_remaining <= 2.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- players_remaining >  2.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- position_relative_button >  4.500
+|   |   |   |   |   |   |   |   |   |   |--- players_to_act <= 2.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- players_to_act >  2.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  401.497
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 401.513
+|   |   |   |   |   |   |   |   |   |   |--- position_relative_button <= 4.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- position_relative_button >  4.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  401.513
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 404.918
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  404.918
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |--- pot_size_bb >  405.500
+|   |   |   |   |   |--- equity_percentile <= 38.500
+|   |   |   |   |   |   |--- position_relative_button <= 3.500
+|   |   |   |   |   |   |   |--- pot_size_bb <= 408.212
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 408.205
+|   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.305
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 33.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  33.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- hand_equity >  0.305
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 407.627
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  407.627
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  408.205
+|   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.375
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 408.206
+|   |   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  408.206
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- hand_equity >  0.375
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- pot_size_bb >  408.212
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 413.413
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 34.500
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.345
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.345
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  34.500
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 412.488
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  412.488
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  413.413
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 413.482
+|   |   |   |   |   |   |   |   |   |   |--- players_remaining <= 3.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- players_remaining >  3.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  413.482
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.235
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.235
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |--- position_relative_button >  3.500
+|   |   |   |   |   |   |   |--- effective_stack <= 0.320
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 407.485
+|   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.335
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 405.930
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  405.930
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |--- hand_equity >  0.335
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  407.485
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 411.603
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 411.488
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  411.488
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  411.603
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 412.691
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  412.691
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |--- effective_stack >  0.320
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |--- equity_percentile >  38.500
+|   |   |   |   |   |   |--- pot_size_bb <= 421.251
+|   |   |   |   |   |   |   |--- pot_size_bb <= 411.559
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 411.097
+|   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.375
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 41.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  41.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |--- hand_equity >  0.375
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.465
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.465
+|   |   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  411.097
+|   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.275
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- hand_equity >  0.275
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.305
+|   |   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.305
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |--- pot_size_bb >  411.559
+|   |   |   |   |   |   |   |   |--- hand_equity <= 0.315
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- hand_equity >  0.315
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 419.681
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 418.745
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  418.745
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  419.681
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- pot_size_bb >  421.251
+|   |   |   |   |   |   |   |--- position_relative_button <= 3.500
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- position_relative_button >  3.500
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |--- stack_to_pot_ratio >  0.003
+|   |   |   |   |--- pot_odds <= 0.013
+|   |   |   |   |   |--- stack_to_pot_ratio <= 0.013
+|   |   |   |   |   |   |--- hand_equity <= 0.245
+|   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |--- hand_equity >  0.245
+|   |   |   |   |   |   |   |--- equity_percentile <= 44.500
+|   |   |   |   |   |   |   |   |--- total_street_bets <= 1.500
+|   |   |   |   |   |   |   |   |   |--- players_remaining <= 2.500
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- players_remaining >  2.500
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- total_street_bets >  1.500
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 395.326
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 393.989
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  393.989
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  395.326
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- equity_percentile >  44.500
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.006
+|   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.006
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- stack_to_pot_ratio >  0.013
+|   |   |   |   |   |   |--- pot_size_bb <= 391.291
+|   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- pot_size_bb >  391.291
+|   |   |   |   |   |   |   |--- hand_equity <= 0.325
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- hand_equity >  0.325
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |--- pot_odds >  0.013
+|   |   |   |   |   |--- players_remaining <= 2.500
+|   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- players_remaining >  2.500
+|   |   |   |   |   |   |--- class: call
+|   |   |--- pot_size_bb >  421.544
+|   |   |   |--- pot_size_bb <= 473.333
+|   |   |   |   |--- pot_size_bb <= 472.328
+|   |   |   |   |   |--- pot_size_bb <= 434.466
+|   |   |   |   |   |   |--- pot_size_bb <= 434.435
+|   |   |   |   |   |   |   |--- fold_equity <= 0.150
+|   |   |   |   |   |   |   |   |--- pot_odds <= 0.007
+|   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |   |--- pot_odds >  0.007
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 425.270
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  425.270
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 425.409
+|   |   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  425.409
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |--- fold_equity >  0.150
+|   |   |   |   |   |   |   |   |--- position_relative_button <= 0.500
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 19.500
+|   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  19.500
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- position_relative_button >  0.500
+|   |   |   |   |   |   |   |   |   |--- position <= 1.000
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.295
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.295
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |--- position >  1.000
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.365
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.365
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- pot_size_bb >  434.435
+|   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |--- pot_size_bb >  434.466
+|   |   |   |   |   |   |--- equity_percentile <= 54.500
+|   |   |   |   |   |   |   |--- position_relative_button <= 2.500
+|   |   |   |   |   |   |   |   |--- players_to_act <= 2.500
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 40.500
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 454.975
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  454.975
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  40.500
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.345
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.345
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |--- players_to_act >  2.500
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 30.500
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 457.958
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  457.958
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  30.500
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- position_relative_button >  2.500
+|   |   |   |   |   |   |   |   |--- players_remaining <= 2.500
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 471.624
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.335
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.335
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  471.624
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 471.738
+|   |   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  471.738
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- players_remaining >  2.500
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 38.500
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 28.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  28.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  38.500
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 453.597
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  453.597
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- equity_percentile >  54.500
+|   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |--- pot_size_bb >  472.328
+|   |   |   |   |   |--- position_relative_button <= 2.500
+|   |   |   |   |   |   |--- hand_equity <= 0.305
+|   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- hand_equity >  0.305
+|   |   |   |   |   |   |   |--- players_to_act <= 1.500
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- players_to_act >  1.500
+|   |   |   |   |   |   |   |   |--- equity_percentile <= 26.500
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- equity_percentile >  26.500
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 472.434
+|   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  472.434
+|   |   |   |   |   |   |   |   |   |   |--- players_remaining <= 3.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- players_remaining >  3.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |--- position_relative_button >  2.500
+|   |   |   |   |   |   |--- class: call
+|   |   |   |--- pot_size_bb >  473.333
+|   |   |   |   |--- pot_size_bb <= 475.001
+|   |   |   |   |   |--- pot_size_bb <= 474.994
+|   |   |   |   |   |   |--- hand_equity <= 0.235
+|   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- hand_equity >  0.235
+|   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- pot_size_bb >  474.994
+|   |   |   |   |   |   |--- equity_percentile <= 31.500
+|   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |--- equity_percentile >  31.500
+|   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |--- pot_size_bb >  475.001
+|   |   |   |   |   |--- pot_size_bb <= 483.502
+|   |   |   |   |   |   |--- pot_size_bb <= 483.500
+|   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- pot_size_bb >  483.500
+|   |   |   |   |   |   |   |--- hand_equity <= 0.330
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |--- hand_equity >  0.330
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- pot_size_bb >  483.502
+|   |   |   |   |   |   |--- class: call
+|--- effective_stack >  0.499
+|   |--- effective_stack <= 59.780
+|   |   |--- stack_size_bb <= 18.094
+|   |   |   |--- pot_size_bb <= 249.710
+|   |   |   |   |--- fold_equity <= 0.150
+|   |   |   |   |   |--- pot_size_bb <= 170.216
+|   |   |   |   |   |   |--- pot_size_bb <= 166.961
+|   |   |   |   |   |   |   |--- pot_size_bb <= 166.808
+|   |   |   |   |   |   |   |   |--- equity_percentile <= 31.000
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- equity_percentile >  31.000
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- pot_size_bb >  166.808
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- pot_size_bb >  166.961
+|   |   |   |   |   |   |   |--- pot_odds <= 0.003
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- pot_odds >  0.003
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- pot_size_bb >  170.216
+|   |   |   |   |   |   |--- stack_size_bb <= 13.342
+|   |   |   |   |   |   |   |--- pot_size_bb <= 210.466
+|   |   |   |   |   |   |   |   |--- hand_equity <= 0.335
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 29.500
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.245
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.245
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  29.500
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 203.487
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  203.487
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |--- hand_equity >  0.335
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 176.688
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.075
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.075
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  176.688
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.071
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.071
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- pot_size_bb >  210.466
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.017
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 212.343
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.014
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.014
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  212.343
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 2.499
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb >  2.499
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.017
+|   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.375
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 236.473
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  236.473
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- hand_equity >  0.375
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 41.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  41.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- stack_size_bb >  13.342
+|   |   |   |   |   |   |   |--- position_relative_button <= 2.500
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.072
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 249.278
+|   |   |   |   |   |   |   |   |   |   |--- pot_odds <= 0.002
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- pot_odds >  0.002
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  249.278
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.072
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 17.694
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack <= 13.648
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack >  13.648
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb >  17.694
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- position_relative_button >  2.500
+|   |   |   |   |   |   |   |   |--- hand_equity <= 0.435
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 174.012
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 171.887
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  171.887
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  174.012
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.093
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.093
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |--- hand_equity >  0.435
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |--- fold_equity >  0.150
+|   |   |   |   |   |--- position_relative_button <= 4.500
+|   |   |   |   |   |   |--- stack_size_bb <= 11.101
+|   |   |   |   |   |   |   |--- pot_size_bb <= 200.618
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.018
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 195.406
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  195.406
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 31.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  31.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.018
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 180.240
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 10.685
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb >  10.685
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  180.240
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.058
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.058
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |--- pot_size_bb >  200.618
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 237.839
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 200.711
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  200.711
+|   |   |   |   |   |   |   |   |   |   |--- is_button <= 0.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- is_button >  0.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  237.839
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 238.421
+|   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  238.421
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack <= 2.201
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack >  2.201
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |--- stack_size_bb >  11.101
+|   |   |   |   |   |   |   |--- pot_size_bb <= 210.759
+|   |   |   |   |   |   |   |   |--- stack_size_bb <= 11.160
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- stack_size_bb >  11.160
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.056
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.056
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 194.904
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  194.904
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |   |--- pot_size_bb >  210.759
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.074
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 224.067
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 11.619
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb >  11.619
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  224.067
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.069
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.069
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.074
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- position_relative_button >  4.500
+|   |   |   |   |   |   |--- pot_size_bb <= 211.106
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.107
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.066
+|   |   |   |   |   |   |   |   |   |--- pot_odds <= 0.003
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 22.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  22.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |--- pot_odds >  0.003
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.015
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.015
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.066
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 192.995
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.068
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.068
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  192.995
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 195.962
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  195.962
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.107
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- pot_size_bb >  211.106
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.045
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 246.356
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 211.626
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  211.626
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 212.058
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  212.058
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  246.356
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.045
+|   |   |   |   |   |   |   |   |--- equity_percentile <= 33.500
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 225.902
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 30.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  30.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  225.902
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack <= 13.959
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack >  13.959
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- equity_percentile >  33.500
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 242.535
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack <= 11.270
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack >  11.270
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  242.535
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |--- pot_size_bb >  249.710
+|   |   |   |   |--- pot_size_bb <= 320.064
+|   |   |   |   |   |--- stack_size_bb <= 10.716
+|   |   |   |   |   |   |--- pot_size_bb <= 292.493
+|   |   |   |   |   |   |   |--- pot_size_bb <= 279.290
+|   |   |   |   |   |   |   |   |--- position_relative_button <= 4.500
+|   |   |   |   |   |   |   |   |   |--- pot_odds <= 0.002
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- pot_odds >  0.002
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 277.519
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  277.519
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |   |   |--- position_relative_button >  4.500
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 278.906
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack <= 3.239
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack >  3.239
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  278.906
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- pot_size_bb >  279.290
+|   |   |   |   |   |   |   |   |--- stack_size_bb <= 8.208
+|   |   |   |   |   |   |   |   |   |--- position_relative_button <= 2.500
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 45.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  45.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- position_relative_button >  2.500
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 291.757
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  291.757
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- stack_size_bb >  8.208
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 27.500
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  27.500
+|   |   |   |   |   |   |   |   |   |   |--- pot_odds <= 0.002
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- pot_odds >  0.002
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |--- pot_size_bb >  292.493
+|   |   |   |   |   |   |   |--- stack_size_bb <= 3.514
+|   |   |   |   |   |   |   |   |--- position <= 0.500
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 297.791
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.007
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.007
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  297.791
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 304.263
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  304.263
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |--- position >  0.500
+|   |   |   |   |   |   |   |   |   |--- effective_stack <= 1.515
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 313.328
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  313.328
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- effective_stack >  1.515
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 307.491
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  307.491
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |--- stack_size_bb >  3.514
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.025
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 7.548
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack <= 3.440
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack >  3.440
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb >  7.548
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.025
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.025
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.025
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.028
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.028
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.028
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.028
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |--- stack_size_bb >  10.716
+|   |   |   |   |   |   |--- pot_size_bb <= 276.727
+|   |   |   |   |   |   |   |--- is_blind <= 0.500
+|   |   |   |   |   |   |   |   |--- position_relative_button <= 2.500
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 268.261
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.051
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.051
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  268.261
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- position_relative_button >  2.500
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 260.466
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack <= 15.802
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack >  15.802
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  260.466
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.059
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.059
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |--- is_blind >  0.500
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.060
+|   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.395
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.060
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.060
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- hand_equity >  0.395
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack <= 11.714
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack >  11.714
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.060
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.066
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack <= 15.874
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack >  15.874
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.066
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 256.617
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  256.617
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |--- pot_size_bb >  276.727
+|   |   |   |   |   |   |   |--- stack_size_bb <= 14.626
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 295.627
+|   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.315
+|   |   |   |   |   |   |   |   |   |   |--- fold_equity <= 0.150
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- fold_equity >  0.150
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |--- hand_equity >  0.315
+|   |   |   |   |   |   |   |   |   |   |--- players_to_act <= 1.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- players_to_act >  1.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  295.627
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 14.509
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb >  14.509
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- stack_size_bb >  14.626
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.047
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.047
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |--- pot_size_bb >  320.064
+|   |   |   |   |   |--- pot_size_bb <= 413.768
+|   |   |   |   |   |   |--- stack_size_bb <= 7.115
+|   |   |   |   |   |   |   |--- stack_size_bb <= 7.096
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 383.924
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.013
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.010
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.010
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.013
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 45.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  45.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  383.924
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 394.072
+|   |   |   |   |   |   |   |   |   |   |--- position_relative_button <= 2.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- position_relative_button >  2.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  394.072
+|   |   |   |   |   |   |   |   |   |   |--- pot_odds <= 0.001
+|   |   |   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |   |   |   |   |--- pot_odds >  0.001
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |--- stack_size_bb >  7.096
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |--- stack_size_bb >  7.115
+|   |   |   |   |   |   |   |--- pot_size_bb <= 340.278
+|   |   |   |   |   |   |   |   |--- position_relative_button <= 4.500
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 28.500
+|   |   |   |   |   |   |   |   |   |   |--- position_relative_button <= 2.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- position_relative_button >  2.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  28.500
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 339.988
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  339.988
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- position_relative_button >  4.500
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 337.079
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 332.784
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  332.784
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  337.079
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.325
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.325
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |--- pot_size_bb >  340.278
+|   |   |   |   |   |   |   |   |--- equity_percentile <= 34.500
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 14.799
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.041
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.041
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb >  14.799
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- equity_percentile >  34.500
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.049
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack <= 7.212
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack >  7.212
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.049
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.050
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.050
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- pot_size_bb >  413.768
+|   |   |   |   |   |   |--- effective_stack <= 0.749
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.003
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.003
+|   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |   |--- effective_stack >  0.749
+|   |   |   |   |   |   |   |--- class: call
+|   |   |--- stack_size_bb >  18.094
+|   |   |   |--- pot_size_bb <= 174.648
+|   |   |   |   |--- effective_stack <= 18.026
+|   |   |   |   |   |--- pot_odds <= 0.137
+|   |   |   |   |   |   |--- pot_odds <= 0.137
+|   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- pot_odds >  0.137
+|   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |--- pot_odds >  0.137
+|   |   |   |   |   |   |--- class: call
+|   |   |   |   |--- effective_stack >  18.026
+|   |   |   |   |   |--- position_relative_button <= 4.500
+|   |   |   |   |   |   |--- is_blind <= 0.500
+|   |   |   |   |   |   |   |--- pot_size_bb <= 113.777
+|   |   |   |   |   |   |   |   |--- effective_stack <= 38.997
+|   |   |   |   |   |   |   |   |   |--- current_bet_bb <= 30.331
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack <= 36.686
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack >  36.686
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- current_bet_bb >  30.331
+|   |   |   |   |   |   |   |   |   |   |--- current_bet_bb <= 35.763
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- current_bet_bb >  35.763
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- effective_stack >  38.997
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 76.375
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.411
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.411
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb >  76.375
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack <= 41.895
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack >  41.895
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |--- pot_size_bb >  113.777
+|   |   |   |   |   |   |   |   |--- stack_size_bb <= 24.489
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 24.245
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 21.808
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb >  21.808
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb >  24.245
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.147
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.147
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |--- stack_size_bb >  24.489
+|   |   |   |   |   |   |   |   |   |--- effective_stack <= 52.842
+|   |   |   |   |   |   |   |   |   |   |--- pot_odds <= 0.191
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_odds >  0.191
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- effective_stack >  52.842
+|   |   |   |   |   |   |   |   |   |   |--- position_relative_button <= 3.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- position_relative_button >  3.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |--- is_blind >  0.500
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.169
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.109
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.109
+|   |   |   |   |   |   |   |   |   |--- effective_stack <= 21.874
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 169.225
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  169.225
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |--- effective_stack >  21.874
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 38.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  38.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.169
+|   |   |   |   |   |   |   |   |--- effective_stack <= 44.278
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 65.887
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack <= 25.805
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack >  25.805
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb >  65.887
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack <= 37.223
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack >  37.223
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |--- effective_stack >  44.278
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.392
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.265
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.265
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.392
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.515
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.515
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |--- position_relative_button >  4.500
+|   |   |   |   |   |   |--- stack_size_bb <= 29.504
+|   |   |   |   |   |   |   |--- effective_stack <= 26.456
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 174.361
+|   |   |   |   |   |   |   |   |   |--- pot_odds <= 0.003
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 167.622
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  167.622
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- pot_odds >  0.003
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 166.946
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  166.946
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  174.361
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- effective_stack >  26.456
+|   |   |   |   |   |   |   |   |--- effective_stack <= 26.782
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- effective_stack >  26.782
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 23.500
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  23.500
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 40.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  40.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |--- stack_size_bb >  29.504
+|   |   |   |   |   |   |   |--- effective_stack <= 48.881
+|   |   |   |   |   |   |   |   |--- effective_stack <= 28.508
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 45.383
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 139.869
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  139.869
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb >  45.383
+|   |   |   |   |   |   |   |   |   |   |--- pot_odds <= 0.137
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- pot_odds >  0.137
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- effective_stack >  28.508
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 162.545
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 77.510
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb >  77.510
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  162.545
+|   |   |   |   |   |   |   |   |   |   |--- total_street_bets <= 1.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- total_street_bets >  1.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |--- effective_stack >  48.881
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 150.972
+|   |   |   |   |   |   |   |   |   |--- pot_odds <= 0.003
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- pot_odds >  0.003
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 91.865
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb >  91.865
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  150.972
+|   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.345
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.265
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.265
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- hand_equity >  0.345
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack <= 49.884
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack >  49.884
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |--- pot_size_bb >  174.648
+|   |   |   |   |--- stack_size_bb <= 21.298
+|   |   |   |   |   |--- pot_size_bb <= 244.872
+|   |   |   |   |   |   |--- fold_equity <= 0.150
+|   |   |   |   |   |   |   |--- pot_size_bb <= 196.902
+|   |   |   |   |   |   |   |   |--- stack_size_bb <= 20.758
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 19.963
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 25.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  25.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb >  19.963
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 41.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  41.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- stack_size_bb >  20.758
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- pot_size_bb >  196.902
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 237.690
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  237.690
+|   |   |   |   |   |   |   |   |   |--- effective_stack <= 21.046
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 38.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  38.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- effective_stack >  21.046
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.335
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.335
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |--- fold_equity >  0.150
+|   |   |   |   |   |   |   |--- effective_stack <= 19.919
+|   |   |   |   |   |   |   |   |--- stack_size_bb <= 18.242
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- stack_size_bb >  18.242
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 45.500
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 176.490
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  176.490
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  45.500
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.092
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.092
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- effective_stack >  19.919
+|   |   |   |   |   |   |   |   |--- effective_stack <= 20.047
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- effective_stack >  20.047
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 27.500
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 181.116
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  181.116
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  27.500
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 241.627
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  241.627
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |--- pot_size_bb >  244.872
+|   |   |   |   |   |   |--- stack_size_bb <= 18.902
+|   |   |   |   |   |   |   |--- stack_size_bb <= 18.816
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 247.320
+|   |   |   |   |   |   |   |   |   |--- effective_stack <= 18.233
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.074
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.074
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- effective_stack >  18.233
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 26.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  26.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  247.320
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.057
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 328.944
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  328.944
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.057
+|   |   |   |   |   |   |   |   |   |   |--- position_relative_button <= 4.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- position_relative_button >  4.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |--- stack_size_bb >  18.816
+|   |   |   |   |   |   |   |   |--- fold_equity <= 0.150
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 18.829
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb >  18.829
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- fold_equity >  0.150
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.070
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.070
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.074
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.074
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- stack_size_bb >  18.902
+|   |   |   |   |   |   |   |--- pot_size_bb <= 273.646
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 273.015
+|   |   |   |   |   |   |   |   |   |--- total_street_bets <= 1.500
+|   |   |   |   |   |   |   |   |   |   |--- position_relative_button <= 4.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- position_relative_button >  4.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- total_street_bets >  1.500
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 32.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  32.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  273.015
+|   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- pot_size_bb >  273.646
+|   |   |   |   |   |   |   |   |--- effective_stack <= 21.266
+|   |   |   |   |   |   |   |   |   |--- pot_commitment <= 0.002
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 37.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  37.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |--- pot_commitment >  0.002
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |--- effective_stack >  21.266
+|   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |--- stack_size_bb >  21.298
+|   |   |   |   |   |--- pot_size_bb <= 245.502
+|   |   |   |   |   |   |--- pot_odds <= 0.098
+|   |   |   |   |   |   |   |--- effective_stack <= 43.885
+|   |   |   |   |   |   |   |   |--- stack_size_bb <= 41.887
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 39.277
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack <= 37.392
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack >  37.392
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb >  39.277
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.375
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.375
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |--- stack_size_bb >  41.887
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 39.500
+|   |   |   |   |   |   |   |   |   |   |--- pot_odds <= 0.097
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |   |   |   |   |--- pot_odds >  0.097
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  39.500
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- effective_stack >  43.885
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 195.948
+|   |   |   |   |   |   |   |   |   |--- pot_odds <= 0.003
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |--- pot_odds >  0.003
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.249
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.249
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  195.948
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- pot_odds >  0.098
+|   |   |   |   |   |   |   |--- stack_size_bb <= 26.850
+|   |   |   |   |   |   |   |   |--- effective_stack <= 26.839
+|   |   |   |   |   |   |   |   |   |--- position_relative_button <= 4.500
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 23.120
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb >  23.120
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- position_relative_button >  4.500
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 41.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  41.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- effective_stack >  26.839
+|   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- stack_size_bb >  26.850
+|   |   |   |   |   |   |   |   |--- position_relative_button <= 4.500
+|   |   |   |   |   |   |   |   |   |--- effective_stack <= 53.313
+|   |   |   |   |   |   |   |   |   |   |--- position_numeric <= 0.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- position_numeric >  0.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- effective_stack >  53.313
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 36.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  36.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- position_relative_button >  4.500
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 32.044
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 205.992
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  205.992
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb >  32.044
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 190.919
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  190.919
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |--- pot_size_bb >  245.502
+|   |   |   |   |   |   |--- pot_size_bb <= 319.680
+|   |   |   |   |   |   |   |--- pot_size_bb <= 319.551
+|   |   |   |   |   |   |   |   |--- position_relative_button <= 4.500
+|   |   |   |   |   |   |   |   |   |--- pot_odds <= 0.002
+|   |   |   |   |   |   |   |   |   |   |--- pot_odds <= 0.002
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |--- pot_odds >  0.002
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- pot_odds >  0.002
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.455
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.455
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- position_relative_button >  4.500
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.082
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.080
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.080
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.082
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.355
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.355
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- pot_size_bb >  319.551
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- pot_size_bb >  319.680
+|   |   |   |   |   |   |   |--- class: call
+|   |--- effective_stack >  59.780
+|   |   |--- total_street_bets <= 0.500
+|   |   |   |--- stack_to_pot_ratio <= 1.086
+|   |   |   |   |--- pot_size_bb <= 110.023
+|   |   |   |   |   |--- is_blind <= 0.500
+|   |   |   |   |   |   |--- position_relative_button <= 4.500
+|   |   |   |   |   |   |   |--- fold_equity <= 0.150
+|   |   |   |   |   |   |   |   |--- stack_size_bb <= 73.042
+|   |   |   |   |   |   |   |   |   |--- effective_stack <= 72.888
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 50.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  50.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- effective_stack >  72.888
+|   |   |   |   |   |   |   |   |   |   |--- players_remaining <= 2.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- players_remaining >  2.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- stack_size_bb >  73.042
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 82.704
+|   |   |   |   |   |   |   |   |   |   |--- players_remaining <= 4.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- players_remaining >  4.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb >  82.704
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 80.478
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  80.478
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- fold_equity >  0.150
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.725
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 87.293
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  87.293
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 41.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  41.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.725
+|   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.355
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 1.080
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  1.080
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- hand_equity >  0.355
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 95.394
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  95.394
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- position_relative_button >  4.500
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 1.080
+|   |   |   |   |   |   |   |   |--- hand_equity <= 0.355
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 65.278
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  65.278
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 1.060
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  1.060
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- hand_equity >  0.355
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.609
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.609
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 79.853
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb >  79.853
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio >  1.080
+|   |   |   |   |   |   |   |   |--- equity_percentile <= 37.500
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- equity_percentile >  37.500
+|   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- is_blind >  0.500
+|   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.729
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.579
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.579
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.728
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 18.500
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  18.500
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 109.954
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  109.954
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.728
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- stack_to_pot_ratio >  0.729
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 1.079
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.993
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.990
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 36.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  36.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.990
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 32.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  32.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.993
+|   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.425
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack <= 76.743
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack >  76.743
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |--- hand_equity >  0.425
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio >  1.079
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 1.081
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  1.081
+|   |   |   |   |   |   |   |   |   |--- effective_stack <= 69.099
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- effective_stack >  69.099
+|   |   |   |   |   |   |   |   |   |   |--- players_to_act <= 1.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |   |--- players_to_act >  1.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |--- pot_size_bb >  110.023
+|   |   |   |   |   |--- pot_size_bb <= 142.730
+|   |   |   |   |   |   |--- position <= 1.500
+|   |   |   |   |   |   |   |--- pot_size_bb <= 110.997
+|   |   |   |   |   |   |   |   |--- effective_stack <= 72.777
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- effective_stack >  72.777
+|   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- pot_size_bb >  110.997
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.520
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.518
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.510
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.510
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.518
+|   |   |   |   |   |   |   |   |   |   |--- fold_equity <= 0.150
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- fold_equity >  0.150
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.520
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 44.500
+|   |   |   |   |   |   |   |   |   |   |--- is_blind <= 0.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |   |   |   |   |--- is_blind >  0.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  44.500
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- position >  1.500
+|   |   |   |   |   |   |   |--- position_relative_button <= 4.500
+|   |   |   |   |   |   |   |   |--- equity_percentile <= 42.500
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.509
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.265
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.265
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.509
+|   |   |   |   |   |   |   |   |   |   |--- players_to_act <= 2.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- players_to_act >  2.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |--- equity_percentile >  42.500
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.593
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 127.536
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  127.536
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.593
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- position_relative_button >  4.500
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 111.979
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  111.979
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 138.423
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 74.003
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb >  74.003
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  138.423
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- pot_size_bb >  142.730
+|   |   |   |   |   |   |--- pot_size_bb <= 153.998
+|   |   |   |   |   |   |   |--- position_relative_button <= 2.500
+|   |   |   |   |   |   |   |   |--- hand_equity <= 0.355
+|   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.295
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- hand_equity >  0.295
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.315
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.315
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- hand_equity >  0.355
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- position_relative_button >  2.500
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- pot_size_bb >  153.998
+|   |   |   |   |   |   |   |--- pot_size_bb <= 169.178
+|   |   |   |   |   |   |   |   |--- equity_percentile <= 33.500
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.430
+|   |   |   |   |   |   |   |   |   |   |--- position <= 1.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- position >  1.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.430
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- equity_percentile >  33.500
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 41.500
+|   |   |   |   |   |   |   |   |   |   |--- position_relative_button <= 0.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |   |--- position_relative_button >  0.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  41.500
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 47.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  47.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- pot_size_bb >  169.178
+|   |   |   |   |   |   |   |   |--- players_remaining <= 3.500
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 60.622
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb >  60.622
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- players_remaining >  3.500
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 186.868
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  186.868
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |--- stack_to_pot_ratio >  1.086
+|   |   |   |   |--- stack_size_bb <= 86.485
+|   |   |   |   |   |--- position_relative_button <= 1.500
+|   |   |   |   |   |   |--- effective_stack <= 82.749
+|   |   |   |   |   |   |   |--- effective_stack <= 69.607
+|   |   |   |   |   |   |   |   |--- stack_size_bb <= 69.269
+|   |   |   |   |   |   |   |   |   |--- effective_stack <= 68.927
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |--- effective_stack >  68.927
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |--- stack_size_bb >  69.269
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 31.500
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  31.500
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- effective_stack >  69.607
+|   |   |   |   |   |   |   |   |--- effective_stack <= 77.395
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 51.418
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.385
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.385
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  51.418
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 1.412
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  1.412
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |--- effective_stack >  77.395
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 2.044
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 40.044
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  40.044
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  2.044
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 39.845
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  39.845
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- effective_stack >  82.749
+|   |   |   |   |   |   |   |--- effective_stack <= 86.326
+|   |   |   |   |   |   |   |   |--- stack_size_bb <= 82.880
+|   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.325
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |--- hand_equity >  0.325
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |--- stack_size_bb >  82.880
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 56.101
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 3.106
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  3.106
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  56.101
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 1.466
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  1.466
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |--- effective_stack >  86.326
+|   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |--- position_relative_button >  1.500
+|   |   |   |   |   |   |--- position_relative_button <= 4.500
+|   |   |   |   |   |   |   |--- position <= 1.500
+|   |   |   |   |   |   |   |   |--- hand_equity <= 0.475
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 1.256
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 1.250
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  1.250
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  1.256
+|   |   |   |   |   |   |   |   |   |   |--- players_remaining <= 2.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- players_remaining >  2.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |--- hand_equity >  0.475
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- position >  1.500
+|   |   |   |   |   |   |   |   |--- effective_stack <= 74.364
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 53.954
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  53.954
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.255
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.255
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |--- effective_stack >  74.364
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 2.880
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 73.787
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  73.787
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  2.880
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- position_relative_button >  4.500
+|   |   |   |   |   |   |   |--- pot_size_bb <= 64.711
+|   |   |   |   |   |   |   |   |--- equity_percentile <= 24.500
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 60.933
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 2.604
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  2.604
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  60.933
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 62.263
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  62.263
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |--- equity_percentile >  24.500
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 1.402
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 55.065
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  55.065
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  1.402
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 55.671
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  55.671
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |--- pot_size_bb >  64.711
+|   |   |   |   |   |   |   |   |--- stack_size_bb <= 85.011
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 1.245
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 65.546
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  65.546
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  1.245
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |--- stack_size_bb >  85.011
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |--- stack_size_bb >  86.485
+|   |   |   |   |   |--- is_blind <= 0.500
+|   |   |   |   |   |   |--- position_relative_button <= 4.500
+|   |   |   |   |   |   |   |--- position_numeric <= 1.500
+|   |   |   |   |   |   |   |   |--- position_relative_button <= 2.500
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 95.938
+|   |   |   |   |   |   |   |   |   |   |--- players_remaining <= 2.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- players_remaining >  2.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb >  95.938
+|   |   |   |   |   |   |   |   |   |   |--- players_remaining <= 2.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- players_remaining >  2.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |--- position_relative_button >  2.500
+|   |   |   |   |   |   |   |   |   |--- effective_stack <= 89.519
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.425
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.425
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- effective_stack >  89.519
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 46.360
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  46.360
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |--- position_numeric >  1.500
+|   |   |   |   |   |   |   |   |--- stack_size_bb <= 91.236
+|   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.225
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- hand_equity >  0.225
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 91.229
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb >  91.229
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- stack_size_bb >  91.236
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 33.540
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 32.813
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  32.813
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  33.540
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 34.925
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  34.925
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |--- position_relative_button >  4.500
+|   |   |   |   |   |   |   |--- stack_size_bb <= 91.911
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 17.894
+|   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  17.894
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 29.500
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 28.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  28.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  29.500
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.285
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.285
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |--- stack_size_bb >  91.911
+|   |   |   |   |   |   |   |   |--- pot_size_bb <= 3.250
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 36.300
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  36.300
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |--- pot_size_bb >  3.250
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 91.938
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 4.926
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  4.926
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb >  91.938
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack <= 91.941
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack >  91.941
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |--- is_blind >  0.500
+|   |   |   |   |   |   |--- stack_to_pot_ratio <= 4.363
+|   |   |   |   |   |   |   |--- is_button <= 0.500
+|   |   |   |   |   |   |   |   |--- effective_stack <= 87.710
+|   |   |   |   |   |   |   |   |   |--- effective_stack <= 87.597
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 51.850
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  51.850
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |--- effective_stack >  87.597
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 28.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  28.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |--- effective_stack >  87.710
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 20.694
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 90.156
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb >  90.156
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  20.694
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack <= 88.576
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack >  88.576
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |--- is_button >  0.500
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 3.856
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 3.690
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 93.436
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb >  93.436
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  3.690
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 92.571
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb >  92.571
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  3.856
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 22.575
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 4.041
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  4.041
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  22.575
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 4.036
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  4.036
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- stack_to_pot_ratio >  4.363
+|   |   |   |   |   |   |   |--- is_button <= 0.500
+|   |   |   |   |   |   |   |   |--- hand_equity <= 0.215
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 33.500
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  33.500
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |--- hand_equity >  0.215
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 20.331
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 7.998
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  7.998
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  20.331
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 4.568
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  4.568
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |--- is_button >  0.500
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 4.411
+|   |   |   |   |   |   |   |   |   |--- effective_stack <= 91.149
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- effective_stack >  91.149
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  4.411
+|   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.455
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 97.875
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb >  97.875
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- hand_equity >  0.455
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |--- total_street_bets >  0.500
+|   |   |   |--- is_button <= 0.500
+|   |   |   |   |--- position_relative_button <= 4.500
+|   |   |   |   |   |--- pot_odds <= 0.005
+|   |   |   |   |   |   |--- position_relative_button <= 3.500
+|   |   |   |   |   |   |   |--- stack_size_bb <= 62.807
+|   |   |   |   |   |   |   |   |--- position_relative_button <= 2.500
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.379
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.379
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- position_relative_button >  2.500
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 129.225
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.305
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.305
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  129.225
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 155.976
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  155.976
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- stack_size_bb >  62.807
+|   |   |   |   |   |   |   |   |--- hand_equity <= 0.345
+|   |   |   |   |   |   |   |   |   |--- players_remaining <= 2.500
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.335
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.335
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |--- players_remaining >  2.500
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack <= 67.335
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack >  67.335
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |--- hand_equity >  0.345
+|   |   |   |   |   |   |   |   |   |--- pot_odds <= 0.004
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 32.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  32.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- pot_odds >  0.004
+|   |   |   |   |   |   |   |   |   |   |--- position <= 0.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- position >  0.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- position_relative_button >  3.500
+|   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- pot_odds >  0.005
+|   |   |   |   |   |   |--- players_remaining <= 2.500
+|   |   |   |   |   |   |   |--- position_numeric <= 1.500
+|   |   |   |   |   |   |   |   |--- position_relative_button <= 2.500
+|   |   |   |   |   |   |   |   |   |--- position <= 0.500
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.711
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.711
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- position >  0.500
+|   |   |   |   |   |   |   |   |   |   |--- pot_odds <= 0.017
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_odds >  0.017
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |--- position_relative_button >  2.500
+|   |   |   |   |   |   |   |   |   |--- pot_odds <= 0.006
+|   |   |   |   |   |   |   |   |   |   |--- pot_odds <= 0.005
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- pot_odds >  0.005
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- pot_odds >  0.006
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 27.368
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  27.368
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |--- position_numeric >  1.500
+|   |   |   |   |   |   |   |   |--- equity_percentile <= 27.500
+|   |   |   |   |   |   |   |   |   |--- effective_stack <= 62.798
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.315
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.315
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |--- effective_stack >  62.798
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack <= 93.149
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack >  93.149
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- equity_percentile >  27.500
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.725
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.725
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack <= 81.454
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack >  81.454
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |--- players_remaining >  2.500
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 3.963
+|   |   |   |   |   |   |   |   |--- position_relative_button <= 2.500
+|   |   |   |   |   |   |   |   |   |--- pot_commitment <= 0.242
+|   |   |   |   |   |   |   |   |   |   |--- fold_equity <= 0.150
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- fold_equity >  0.150
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- pot_commitment >  0.242
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- position_relative_button >  2.500
+|   |   |   |   |   |   |   |   |   |--- position_relative_button <= 3.500
+|   |   |   |   |   |   |   |   |   |   |--- pot_commitment <= 0.012
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- pot_commitment >  0.012
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |--- position_relative_button >  3.500
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.265
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.265
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio >  3.963
+|   |   |   |   |   |   |   |   |--- players_remaining <= 3.500
+|   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.435
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.215
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.215
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- hand_equity >  0.435
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- players_remaining >  3.500
+|   |   |   |   |   |   |   |   |   |--- pot_odds <= 0.025
+|   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |--- pot_odds >  0.025
+|   |   |   |   |   |   |   |   |   |   |--- total_street_bets <= 2.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |--- total_street_bets >  2.500
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |--- position_relative_button >  4.500
+|   |   |   |   |   |--- pot_odds <= 0.334
+|   |   |   |   |   |   |--- effective_stack <= 70.281
+|   |   |   |   |   |   |   |--- effective_stack <= 69.964
+|   |   |   |   |   |   |   |   |--- equity_percentile <= 31.500
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 77.895
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.449
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.449
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |--- stack_size_bb >  77.895
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb <= 87.663
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- stack_size_bb >  87.663
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |--- equity_percentile >  31.500
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 32.500
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 1.642
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  1.642
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  32.500
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 0.514
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  0.514
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |--- effective_stack >  69.964
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- effective_stack >  70.281
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 20.900
+|   |   |   |   |   |   |   |   |--- pot_odds <= 0.302
+|   |   |   |   |   |   |   |   |   |--- players_to_act <= 2.500
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 1.512
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  1.512
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- players_to_act >  2.500
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 58.940
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- pot_size_bb >  58.940
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- pot_odds >  0.302
+|   |   |   |   |   |   |   |   |   |--- equity_percentile <= 39.500
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.425
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.425
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- equity_percentile >  39.500
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack <= 83.881
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- effective_stack >  83.881
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |--- stack_to_pot_ratio >  20.900
+|   |   |   |   |   |   |   |   |--- equity_percentile <= 38.500
+|   |   |   |   |   |   |   |   |   |--- pot_odds <= 0.118
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile <= 32.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |   |--- equity_percentile >  32.500
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |--- pot_odds >  0.118
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- equity_percentile >  38.500
+|   |   |   |   |   |   |   |   |   |--- class: fold
+|   |   |   |   |   |--- pot_odds >  0.334
+|   |   |   |   |   |   |--- hand_equity <= 0.295
+|   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- hand_equity >  0.295
+|   |   |   |   |   |   |   |--- class: call
+|   |   |   |--- is_button >  0.500
+|   |   |   |   |--- stack_to_pot_ratio <= 0.568
+|   |   |   |   |   |--- stack_size_bb <= 62.429
+|   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- stack_size_bb >  62.429
+|   |   |   |   |   |   |--- pot_size_bb <= 145.969
+|   |   |   |   |   |   |   |--- pot_size_bb <= 127.208
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- pot_size_bb >  127.208
+|   |   |   |   |   |   |   |   |--- stack_size_bb <= 66.404
+|   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |--- stack_size_bb >  66.404
+|   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |--- pot_size_bb >  145.969
+|   |   |   |   |   |   |   |--- players_remaining <= 2.500
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- players_remaining >  2.500
+|   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |--- stack_to_pot_ratio >  0.568
+|   |   |   |   |   |--- effective_stack <= 60.230
+|   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |--- effective_stack >  60.230
+|   |   |   |   |   |   |--- effective_stack <= 81.541
+|   |   |   |   |   |   |   |--- effective_stack <= 80.690
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 3.181
+|   |   |   |   |   |   |   |   |   |--- effective_stack <= 69.509
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.405
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.405
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- effective_stack >  69.509
+|   |   |   |   |   |   |   |   |   |   |--- current_bet_bb <= 17.002
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- current_bet_bb >  17.002
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  3.181
+|   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |--- effective_stack >  80.690
+|   |   |   |   |   |   |   |   |--- effective_stack <= 81.292
+|   |   |   |   |   |   |   |   |   |--- total_street_bets <= 1.500
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- total_street_bets >  1.500
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- effective_stack >  81.292
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb <= 42.127
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 2.676
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  2.676
+|   |   |   |   |   |   |   |   |   |   |   |--- class: raise
+|   |   |   |   |   |   |   |   |   |--- pot_size_bb >  42.127
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |--- effective_stack >  81.541
+|   |   |   |   |   |   |   |--- pot_commitment <= 0.321
+|   |   |   |   |   |   |   |   |--- pot_odds <= 0.025
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio <= 4.592
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.245
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.245
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |--- stack_to_pot_ratio >  4.592
+|   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |--- pot_odds >  0.025
+|   |   |   |   |   |   |   |   |   |--- pot_odds <= 0.053
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.435
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.435
+|   |   |   |   |   |   |   |   |   |   |   |--- class: call
+|   |   |   |   |   |   |   |   |   |--- pot_odds >  0.053
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity <= 0.395
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- hand_equity >  0.395
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |--- pot_commitment >  0.321
+|   |   |   |   |   |   |   |   |--- class: call
